@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/rewards/</loc>
+    <lastmod>2026-09-08T23:35:28.961Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/privacy/</loc>
     <lastmod>2026-09-08T23:35:23.050Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/</loc>
     <lastmod>2026-09-08T23:34:00.850Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/rewards/</loc>
-    <lastmod>2026-09-08T22:33:46.261Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
