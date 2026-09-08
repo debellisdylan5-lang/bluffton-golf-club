@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://debellisdylan5-lang.github.io/bluffton-golf-club/sitemap.xml
