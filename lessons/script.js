@@ -35,9 +35,19 @@ tailwind.config = {
         if (phoneLink) phoneLink.addEventListener('click', () => pushFooterEvent('phone', '(843) 757-5900'));
       })();
 
-AOS.init({ once: true, duration: 700, offset: 80 });
+(function () {
+      if (window.AOS) {
+        AOS.init({ once: true, duration: 700, offset: 80 });
+        document.documentElement.classList.add('aos-loaded');
+      }
+    })();
 
 (function () {
+      const PAYMEGPT_HOST = 'paymegpt.com';
+      const isGithubPages = location.hostname.endsWith('github.io');
+      const isPaymeGPT = location.hostname === PAYMEGPT_HOST;
+      const prefix = isGithubPages ? '/bluffton-golf-club' : '';
+
       const ROUTES = new Map([
         ['https://paymegpt.com/p/SUpiU9p', '/'],
         ['https://paymegpt.com/p/7kEfQDVgfm', '/golf/'],
@@ -57,89 +67,54 @@ AOS.init({ once: true, duration: 700, offset: 80 });
         ['https://paymegpt.com/p/iGQS8v', '/blog/golf-membership-in-bluffton-sc/']
       ]);
 
-      const PAYMEGPT_HOST = 'paymegpt.com';
-      const GITHUB_PREFIX = '/bluffton-golf-club';
-
-      function getPrefix() {
-        if (location.hostname === PAYMEGPT_HOST) return null;
-        if (location.hostname.endsWith('github.io')) return GITHUB_PREFIX;
-        return '';
+      function localizePath(pathname) {
+        return prefix + (pathname === '/' ? '/' : pathname);
       }
 
-      function applyPrefix(path) {
-        const prefix = getPrefix();
-        if (prefix === null) return path;
-        if (!prefix) return path;
-        return path === '/' ? prefix + '/' : prefix + path;
-      }
+      function routeForAnchor(anchor) {
+        if (!(anchor instanceof HTMLAnchorElement)) return null;
 
-      function rewriteUrl(raw) {
-        const match = ROUTES.get(raw);
-        if (!match) return null;
-        return applyPrefix(match);
-      }
+        const href = anchor.getAttribute('href');
+        if (!href) return null;
 
-      function rewriteAnchor(anchor) {
-        if (!(anchor instanceof HTMLAnchorElement)) return;
-        const original = anchor.getAttribute('href');
-        if (!original || !ROUTES.has(original)) return;
-        if (location.hostname === PAYMEGPT_HOST) return;
+        if (
+          href.startsWith('tel:') ||
+          href.startsWith('mailto:') ||
+          href.startsWith('#') ||
+          href.startsWith('/forms/') ||
+          href.startsWith('/objects/') ||
+          href.startsWith('/wallet/') ||
+          href.startsWith('/join/') ||
+          href.includes('golfscape') ||
+          href.includes('members.eaglespointegc.com')
+        ) {
+          return null;
+        }
 
         try {
-          const url = new URL(original);
-          const mapped = rewriteUrl(url.origin + url.pathname);
-          if (!mapped) return;
-          anchor.setAttribute('href', mapped + url.search + url.hash);
-        } catch (_) {}
+          const url = new URL(href, location.href);
+          const raw = url.origin + url.pathname;
+          const mapped = ROUTES.get(raw);
+          if (!mapped) return null;
+          return localizePath(mapped);
+        } catch (_) {
+          return null;
+        }
       }
 
-      function rewriteDataArticleUrl(el) {
-        if (!(el instanceof Element)) return;
-        const original = el.getAttribute('data-article-url');
-        if (!original || !ROUTES.has(original)) return;
-        if (location.hostname === PAYMEGPT_HOST) return;
+      document.addEventListener('click', function (event) {
+        if (isPaymeGPT) return;
+        if (event.defaultPrevented || event.button !== 0) return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
-        try {
-          const url = new URL(original);
-          const mapped = rewriteUrl(url.origin + url.pathname);
-          if (!mapped) return;
-          el.setAttribute('data-article-url', mapped + url.search + url.hash);
-        } catch (_) {}
-      }
+        const anchor = event.target.closest && event.target.closest('a[href]');
+        if (!anchor) return;
 
-      function scan(root) {
-        if (!root || !root.querySelectorAll) return;
-        root.querySelectorAll('a[href], [data-article-url]').forEach((el) => {
-          if (el.tagName === 'A') rewriteAnchor(el);
-          rewriteDataArticleUrl(el);
-        });
-      }
+        const localPath = routeForAnchor(anchor);
+        if (!localPath) return;
 
-      function start() {
-        scan(document);
-        const observer = new MutationObserver((mutations) => {
-          for (const mutation of mutations) {
-            mutation.addedNodes.forEach((node) => {
-              if (node.nodeType !== 1) return;
-              scan(node);
-            });
-            if (mutation.type === 'attributes' && mutation.target) {
-              if (mutation.target.tagName === 'A') rewriteAnchor(mutation.target);
-              rewriteDataArticleUrl(mutation.target);
-            }
-          }
-        });
-        observer.observe(document.documentElement, {
-          subtree: true,
-          childList: true,
-          attributes: true,
-          attributeFilter: ['href', 'data-article-url']
-        });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', start, { once: true });
-      } else {
-        start();
-      }
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.href = localPath + new URL(anchor.href, location.href).search + new URL(anchor.href, location.href).hash;
+      }, true);
     })();
