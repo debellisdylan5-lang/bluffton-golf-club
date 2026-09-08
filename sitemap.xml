@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/golf-lessons-in-bluffton-sc/</loc>
+    <lastmod>2026-09-08T23:43:56.741Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/golf-courses-in-bluffton-sc/</loc>
     <lastmod>2026-09-08T23:43:50.481Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/golf-membership-in-bluffton-sc/</loc>
     <lastmod>2026-09-08T23:34:29.116Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/golf-lessons-in-bluffton-sc/</loc>
-    <lastmod>2026-09-08T23:34:23.820Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
