@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/</loc>
+    <lastmod>2026-09-08T22:05:05.269Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/</loc>
+    <lastmod>2026-09-08T22:03:03.721Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/golf/</loc>
+    <lastmod>2026-09-08T22:02:47.406Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/book-tee-times/</loc>
+    <lastmod>2026-09-08T22:02:41.691Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/rewards/</loc>
     <lastmod>2026-09-08T21:54:21.689Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,18 +46,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/golf/</loc>
-    <lastmod>2026-09-08T21:53:50.082Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/contact/</loc>
     <lastmod>2026-09-08T21:53:43.442Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/book-tee-times/</loc>
-    <lastmod>2026-09-08T21:53:36.033Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -68,16 +78,6 @@
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-09-08T21:52:56.709Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/</loc>
-    <lastmod>2026-09-08T21:52:50.218Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/</loc>
-    <lastmod>2026-09-08T21:52:44.110Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
