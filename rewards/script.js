@@ -11,3 +11,54 @@ document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('clic
 document.querySelectorAll('a[href*="members.eaglespointegc.com"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'member_login_click'})));
 document.querySelectorAll('a[href*="/p/WSYbZ2a6q"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'privacy_click'})));
 document.querySelectorAll('a[href*="/p/UrkWi8r"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'outings_click'})));
+
+(function(){
+  const routes={
+    'https://paymegpt.com/p/SUpiU9p':'/',
+    'https://paymegpt.com/p/7kEfQDVgfm':'/golf/',
+    'https://paymegpt.com/p/5c8a7v9Aa':'/membership/',
+    'https://paymegpt.com/p/BbtfDrfYx':'/lessons/',
+    'https://paymegpt.com/p/UrkWi8r':'/outings/',
+    'https://paymegpt.com/p/fHpcvCS2Y':'/blog/',
+    'https://paymegpt.com/p/fDMLxwZ8':'/contact/',
+    'https://paymegpt.com/p/S6jARJrr':'/book-tee-times/',
+    'https://paymegpt.com/p/WSYbZ2a6q':'/privacy/',
+    'https://paymegpt.com/p/S48UZA4':'/rewards/',
+    'https://paymegpt.com/p/QdFmcQ':'/blog/public-golf-near-hilton-head/',
+    'https://paymegpt.com/p/TVSWTAP':'/blog/golf-courses-in-bluffton-sc/',
+    'https://paymegpt.com/p/Q4j95JW9HH':'/blog/davis-love-iii-course-strategy/',
+    'https://paymegpt.com/p/AVRKGkLz':'/blog/golf-lessons-in-bluffton-sc/',
+    'https://paymegpt.com/p/DVjf4mfhk':'/blog/lowcountry-golf-guide/',
+    'https://paymegpt.com/p/iGQS8v':'/blog/golf-membership-in-bluffton-sc/'
+  };
+  const isPaymeHost=location.hostname==='paymegpt.com';
+  const isGitHubPages=/\.github\.io$/i.test(location.hostname);
+  const prefix=isPaymeHost?'':(isGitHubPages?'/bluffton-golf-club':'');
+  const rewriteUrl=url=>{
+    if(!url) return url;
+    if(isPaymeHost) return url;
+    try{
+      const u=new URL(url,location.href);
+      const key=u.origin+u.pathname;
+      if(routes[key]){
+        return prefix.replace(/\/$/,'') + routes[key].replace(/^\//,'') + u.search + u.hash;
+      }
+    }catch(e){}
+    return url;
+  };
+  const rewriteRoot=root=>{
+    root.querySelectorAll('a[href]').forEach(a=>{
+      const href=a.getAttribute('href');
+      if(!href) return;
+      if(href.includes('/objects/')||href.includes('/forms/')||href.includes('/wallet/join/')||href.startsWith('tel:')||href.startsWith('mailto:')||href.includes('members.eaglespointegc.com')||href.includes('golfscape')||href.startsWith('http')&& !href.startsWith('https://paymegpt.com/p/')) return;
+      a.href=rewriteUrl(href);
+    });
+    root.querySelectorAll('[data-article-url]').forEach(el=>{
+      const val=el.getAttribute('data-article-url');
+      if(val) el.setAttribute('data-article-url',rewriteUrl(val));
+    });
+  };
+  rewriteRoot(document);
+  const mo=new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1) rewriteRoot(n);})));
+  mo.observe(document.documentElement,{childList:true,subtree:true});
+})();
