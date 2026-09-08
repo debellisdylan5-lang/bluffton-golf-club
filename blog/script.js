@@ -53,9 +53,10 @@ function gtag(){dataLayer.push(arguments);}
 })();
 
 (function(){
-  const EXACT_HOST = 'paymegpt.com';
+  const PAYMEGPT_HOST = 'paymegpt.com';
   const GH_PREFIX = '/bluffton-golf-club';
-  const ROUTES = {
+
+  const LOCAL_ROUTES = {
     'https://paymegpt.com/p/SUpiU9p': '/',
     'https://paymegpt.com/p/7kEfQDVgfm': '/golf/',
     'https://paymegpt.com/p/5c8a7v9Aa': '/membership/',
@@ -74,83 +75,39 @@ function gtag(){dataLayer.push(arguments);}
     'https://paymegpt.com/p/iGQS8v': '/blog/golf-membership-in-bluffton-sc/'
   };
 
-  function getPrefix(){
-    if(location.hostname === EXACT_HOST) return '';
-    if(location.hostname.endsWith('github.io')) return GH_PREFIX;
-    return '';
+  function sitePrefix(){
+    return location.hostname.endsWith('github.io') ? GH_PREFIX : '';
   }
 
-  function withPrefix(path){
-    const prefix = getPrefix();
-    if(!prefix) return path;
-    return path === '/' ? prefix + '/' : prefix + path;
+  function localizePath(path){
+    const prefix = sitePrefix();
+    return prefix ? (path === '/' ? prefix + '/' : prefix + path) : path;
   }
 
-  function rewriteValue(value){
-    if(typeof value !== 'string') return value;
-    const qIndex = value.search(/[?#]/);
-    const base = qIndex === -1 ? value : value.slice(0, qIndex);
-    const suffix = qIndex === -1 ? '' : value.slice(qIndex);
-
-    if(Object.prototype.hasOwnProperty.call(ROUTES, base)){
-      return withPrefix(ROUTES[base]) + suffix;
-    }
-    return value;
+  function isLocalizableHref(href){
+    if(!href) return false;
+    if(href.startsWith('tel:') || href.startsWith('mailto:')) return false;
+    if(href.includes('golfscape')) return false;
+    if(href === 'https://members.eaglespointegc.com') return false;
+    if(/^https?:\/\/paymegpt\.com\/(objects|forms|wallet|join)\//.test(href)) return false;
+    if(/^https?:\/\/[^/]+/.test(href) && !href.startsWith('https://paymegpt.com/')) return false;
+    return Object.prototype.hasOwnProperty.call(LOCAL_ROUTES, href);
   }
 
-  function rewriteNode(node){
-    if(!node || node.nodeType !== 1) return;
+  function handleLocalRouting(event){
+    if(location.hostname === PAYMEGPT_HOST) return;
 
-    if(node.tagName === 'A'){
-      const href = node.getAttribute('href');
-      if(href && !/^https?:\/\/paymegpt\.com\/objects\//.test(href) && !/^https?:\/\/paymegpt\.com\/forms\//.test(href) && !/^https?:\/\/paymegpt\.com\/wallet\//.test(href) && !/^https?:\/\/paymegpt\.com\/join\//.test(href) && !href.startsWith('tel:') && !href.startsWith('mailto:') && href !== 'https://members.eaglespointegc.com' && !href.includes('golfscape') && !/^https?:\/\/[^/]+/.test(href.replace(/^https?:\/\/paymegpt\.com/i, ''))) {
-        const nextHref = rewriteValue(href);
-        if(nextHref !== href) node.setAttribute('href', nextHref);
-      }
-    }
+    const anchor = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+    if(!anchor) return;
 
-    if(node.hasAttribute && node.hasAttribute('data-article-url')){
-      const current = node.getAttribute('data-article-url');
-      const next = rewriteValue(current);
-      if(next !== current) node.setAttribute('data-article-url', next);
-    }
+    const href = anchor.getAttribute('href');
+    if(!isLocalizableHref(href)) return;
 
-    if(node.querySelectorAll){
-      node.querySelectorAll('a[href], [data-article-url]').forEach(el => {
-        if(el.tagName === 'A'){
-          const href = el.getAttribute('href');
-          if(href && !/^https?:\/\/paymegpt\.com\/objects\//.test(href) && !/^https?:\/\/paymegpt\.com\/forms\//.test(href) && !/^https?:\/\/paymegpt\.com\/wallet\//.test(href) && !/^https?:\/\/paymegpt\.com\/join\//.test(href) && !href.startsWith('tel:') && !href.startsWith('mailto:') && href !== 'https://members.eaglespointegc.com' && !href.includes('golfscape')) {
-            const nextHref = rewriteValue(href);
-            if(nextHref !== href) el.setAttribute('href', nextHref);
-          }
-        } else if(el.hasAttribute('data-article-url')){
-          const current = el.getAttribute('data-article-url');
-          const next = rewriteValue(current);
-          if(next !== current) el.setAttribute('data-article-url', next);
-        }
-      });
-    }
+    const nextPath = localizePath(LOCAL_ROUTES[href]);
+    event.preventDefault();
+    event.stopPropagation();
+    window.location.href = nextPath;
   }
 
-  function rewriteAll(){
-    document.querySelectorAll('a[href], [data-article-url]').forEach(rewriteNode);
-  }
-
-  rewriteAll();
-
-  const observer = new MutationObserver(mutations => {
-    for(const mutation of mutations){
-      mutation.addedNodes.forEach(rewriteNode);
-      if(mutation.type === 'attributes' && mutation.target){
-        rewriteNode(mutation.target);
-      }
-    }
-  });
-
-  observer.observe(document.documentElement, {
-    subtree: true,
-    childList: true,
-    attributes: true,
-    attributeFilter: ['href', 'data-article-url']
-  });
+  document.addEventListener('click', handleLocalRouting, true);
 })();
