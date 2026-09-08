@@ -181,3 +181,91 @@ function dlPush(event){ window.dataLayer.push({event:event}); }
 
 
 })();
+
+(function(){
+  const host = location.hostname;
+  if(host === 'paymegpt.com') return;
+
+  const isGithubPages = host.endsWith('github.io');
+  const sitePrefix = isGithubPages ? '/bluffton-golf-club' : '';
+
+  const routeMap = {
+    'https://paymegpt.com/p/SUpiU9p': '/',
+    'https://paymegpt.com/p/7kEfQDVgfm': '/golf/',
+    'https://paymegpt.com/p/5c8a7v9Aa': '/membership/',
+    'https://paymegpt.com/p/BbtfDrfYx': '/lessons/',
+    'https://paymegpt.com/p/UrkWi8r': '/outings/',
+    'https://paymegpt.com/p/fHpcvCS2Y': '/blog/',
+    'https://paymegpt.com/p/fDMLxwZ8': '/contact/',
+    'https://paymegpt.com/p/S6jARJrr': '/book-tee-times/',
+    'https://paymegpt.com/p/WSYbZ2a6q': '/privacy/',
+    'https://paymegpt.com/p/S48UZA4': '/rewards/',
+    'https://paymegpt.com/p/QdFmcQ': '/blog/public-golf-near-hilton-head/',
+    'https://paymegpt.com/p/TVSWTAP': '/blog/golf-courses-in-bluffton-sc/',
+    'https://paymegpt.com/p/Q4j95JW9HH': '/blog/davis-love-iii-course-strategy/',
+    'https://paymegpt.com/p/AVRKGkLz': '/blog/golf-lessons-in-bluffton-sc/',
+    'https://paymegpt.com/p/DVjf4mfhk': '/blog/lowcountry-golf-guide/',
+    'https://paymegpt.com/p/iGQS8v': '/blog/golf-membership-in-bluffton-sc/'
+  };
+
+  function toPrefixedPath(path){
+    return sitePrefix + path;
+  }
+
+  function rewriteUrl(value){
+    if(!value) return value;
+    for(const base in routeMap){
+      if(value === base) return toPrefixedPath(routeMap[base]);
+      if(value.startsWith(base + '?') || value.startsWith(base + '#')) {
+        return toPrefixedPath(routeMap[base]) + value.slice(base.length);
+      }
+    }
+    return value;
+  }
+
+  function rewriteRoot(){
+    document.querySelectorAll('a[href]').forEach(function(a){
+      const href = a.getAttribute('href');
+      const next = rewriteUrl(href);
+      if(next !== href) a.setAttribute('href', next);
+    });
+    document.querySelectorAll('[data-article-url]').forEach(function(el){
+      const val = el.getAttribute('data-article-url');
+      const next = rewriteUrl(val);
+      if(next !== val) el.setAttribute('data-article-url', next);
+    });
+  }
+
+  function observe(){
+    const observer = new MutationObserver(function(mutations){
+      let shouldRewrite = false;
+      for(const m of mutations){
+        if(m.type === 'childList' && m.addedNodes && m.addedNodes.length){
+          shouldRewrite = true;
+          break;
+        }
+        if(m.type === 'attributes' && (m.attributeName === 'href' || m.attributeName === 'data-article-url')){
+          shouldRewrite = true;
+          break;
+        }
+      }
+      if(shouldRewrite) rewriteRoot();
+    });
+    observer.observe(document.documentElement, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['href','data-article-url']
+    });
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){
+      rewriteRoot();
+      observe();
+    }, { once:true });
+  }else{
+    rewriteRoot();
+    observe();
+  }
+})();
