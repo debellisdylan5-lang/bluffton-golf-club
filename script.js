@@ -224,15 +224,22 @@ function dlPush(event){ window.dataLayer.push({event:event}); }
   }
 
   function rewriteRoot(){
-    document.querySelectorAll('a[href]').forEach(function(a){
-      const href = a.getAttribute('href');
-      const next = rewriteUrl(href);
-      if(next !== href) a.setAttribute('href', next);
-    });
-    document.querySelectorAll('[data-article-url]').forEach(function(el){
-      const val = el.getAttribute('data-article-url');
-      const next = rewriteUrl(val);
-      if(next !== val) el.setAttribute('data-article-url', next);
+    const root = document;
+    const nodes = Array.from(root.querySelectorAll('a[href], [data-article-url]'));
+    nodes.unshift(root);
+    nodes.forEach(function(node){
+      if(node === root){
+        root.querySelectorAll('a[href]').forEach(function(a){
+          const href = a.getAttribute('href');
+          const next = rewriteUrl(href);
+          if(next !== href) a.setAttribute('href', next);
+        });
+        root.querySelectorAll('[data-article-url]').forEach(function(el){
+          const val = el.getAttribute('data-article-url');
+          const next = rewriteUrl(val);
+          if(next !== val) el.setAttribute('data-article-url', next);
+        });
+      }
     });
   }
 
