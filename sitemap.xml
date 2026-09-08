@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/public-golf-near-hilton-head/</loc>
+    <lastmod>2026-09-08T23:44:29.539Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/lowcountry-golf-guide/</loc>
     <lastmod>2026-09-08T23:44:12.324Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/book-tee-times/</loc>
     <lastmod>2026-09-08T23:34:45.669Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/public-golf-near-hilton-head/</loc>
-    <lastmod>2026-09-08T23:34:40.548Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
