@@ -2123,3 +2123,16 @@ details{padding:16px 16px 4px}
 .sticky-bar .inner .pill{background:#D9A93B;color:#17191A!important;border:1px solid #D9A93B;box-shadow:0 8px 22px rgba(217,169,59,.18)}
 .sticky-bar .inner .secondary{background:#fff;color:#17191A;border:1px solid rgba(23,25,26,.14)}
 }
+
+/* ===== GLOBAL PRESENTATION ===== */
+    /* Maintains the editorial BGC look and comfortable reading behavior. */
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    .policy-copy p { margin-top: 0.75rem; }
+    .policy-copy a { color: #10283f; text-decoration-color: #B69350; text-underline-offset: 4px; }
+    .policy-copy a:hover { color: #8b6b30; }
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #B69350;
+      outline-offset: 3px;
+    }
+    ::selection { background: #B69350; color: #fff; }
