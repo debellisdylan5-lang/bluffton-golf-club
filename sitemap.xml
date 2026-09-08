@@ -2,7 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/</loc>
-    <lastmod>2026-09-08T22:20:25.606Z</lastmod>
+    <lastmod>2026-09-08T22:32:12.284Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/contact/</loc>
+    <lastmod>2026-09-08T22:31:48.928Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/</loc>
+    <lastmod>2026-09-08T22:31:14.736Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/outings/</loc>
+    <lastmod>2026-09-08T22:30:38.081Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/lessons/</loc>
+    <lastmod>2026-09-08T22:30:03.902Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -16,28 +36,13 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/outings/</loc>
-    <lastmod>2026-09-08T22:17:58.554Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/membership/</loc>
     <lastmod>2026-09-08T22:17:52.684Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/lessons/</loc>
-    <lastmod>2026-09-08T22:17:46.816Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/golf/</loc>
     <lastmod>2026-09-08T22:17:39.950Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/contact/</loc>
-    <lastmod>2026-09-08T22:17:33.664Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-09-08T22:16:51.031Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://debellisdylan5-lang.github.io/bluffton-golf-club/blog/</loc>
-    <lastmod>2026-09-08T22:16:43.862Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
