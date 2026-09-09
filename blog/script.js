@@ -41,13 +41,13 @@ function gtag(){dataLayer.push(arguments);}
   bindClick('#memberLoginTop, #memberLoginMobile, #memberLoginFooter', 'member_login_click', 'Member Login');
   bindClick('a[href^="tel:"]', 'phone_click');
 
-  bindClick('.navlinks a[href="https://paymegpt.com/p/7kEfQDVgfm"], .bgc-site-footer__link[href="https://paymegpt.com/p/7kEfQDVgfm"]', 'golf_page_click', 'Golf');
-  bindClick('.navlinks a[href="https://paymegpt.com/p/5c8a7v9Aa"], .bgc-site-footer__link[href="https://paymegpt.com/p/5c8a7v9Aa"]', 'membership_click', 'Membership');
-  bindClick('.navlinks a[href="https://paymegpt.com/p/BbtfDrfYx"], .bgc-site-footer__link[href="https://paymegpt.com/p/BbtfDrfYx"]', 'lessons_click', 'Lessons');
-  bindClick('.navlinks a[href="https://paymegpt.com/p/UrkWi8r"], .bgc-site-footer__link[href="https://paymegpt.com/p/UrkWi8r"]', 'outings_click', 'Outings');
-  bindClick('.navlinks a[href="https://paymegpt.com/p/fHpcvCS2Y"], .bgc-site-footer__link[href="https://paymegpt.com/p/fHpcvCS2Y"]', 'blog_click', 'Blog');
-  bindClick('.navlinks a[href="https://paymegpt.com/p/fDMLxwZ8"], .bgc-site-footer__link[href="https://paymegpt.com/p/fDMLxwZ8"], .mobile-sticky-actions a.secondary[href="https://paymegpt.com/p/fDMLxwZ8"]', 'contact_click', 'Contact');
-  bindClick('.bgc-site-footer__link[href="https://paymegpt.com/p/WSYbZ2a6q"], #privacyPolicyFooter', 'privacy_click', 'Privacy Policy');
+  bindClick('.navlinks a[href="https://blufftongc.com/golf"], .bgc-site-footer__link[href="https://blufftongc.com/golf"]', 'golf_page_click', 'Golf');
+  bindClick('.navlinks a[href="https://blufftongc.com/membership"], .bgc-site-footer__link[href="https://blufftongc.com/membership"]', 'membership_click', 'Membership');
+  bindClick('.navlinks a[href="https://blufftongc.com/lessons"], .bgc-site-footer__link[href="https://blufftongc.com/lessons"]', 'lessons_click', 'Lessons');
+  bindClick('.navlinks a[href="https://blufftongc.com/outings"], .bgc-site-footer__link[href="https://blufftongc.com/outings"]', 'outings_click', 'Outings');
+  bindClick('.navlinks a[href="https://blufftongc.com/blog"], .bgc-site-footer__link[href="https://blufftongc.com/blog"]', 'blog_click', 'Blog');
+  bindClick('.navlinks a[href="https://blufftongc.com/contact"], .bgc-site-footer__link[href="https://blufftongc.com/contact"], .mobile-sticky-actions a.secondary[href="https://blufftongc.com/contact"]', 'contact_click', 'Contact');
+  bindClick('.bgc-site-footer__link[href="https://blufftongc.com/privacy"], #privacyPolicyFooter', 'privacy_click', 'Privacy Policy');
 
 
 })();
@@ -57,22 +57,22 @@ function gtag(){dataLayer.push(arguments);}
   const GH_PREFIX = '/bluffton-golf-club';
 
   const LOCAL_ROUTES = {
-    'https://paymegpt.com/p/SUpiU9p': '/',
-    'https://paymegpt.com/p/7kEfQDVgfm': '/golf/',
-    'https://paymegpt.com/p/5c8a7v9Aa': '/membership/',
-    'https://paymegpt.com/p/BbtfDrfYx': '/lessons/',
-    'https://paymegpt.com/p/UrkWi8r': '/outings/',
-    'https://paymegpt.com/p/fHpcvCS2Y': '/blog/',
-    'https://paymegpt.com/p/fDMLxwZ8': '/contact/',
-    'https://paymegpt.com/p/S6jARJrr': '/book-tee-times/',
-    'https://paymegpt.com/p/WSYbZ2a6q': '/privacy/',
-    'https://paymegpt.com/p/S48UZA4': '/rewards/',
-    'https://paymegpt.com/p/QdFmcQ': '/blog/public-golf-near-hilton-head/',
-    'https://paymegpt.com/p/TVSWTAP': '/blog/golf-courses-in-bluffton-sc/',
-    'https://paymegpt.com/p/Q4j95JW9HH': '/blog/davis-love-iii-course-strategy/',
-    'https://paymegpt.com/p/AVRKGkLz': '/blog/golf-lessons-in-bluffton-sc/',
-    'https://paymegpt.com/p/DVjf4mfhk': '/blog/lowcountry-golf-guide/',
-    'https://paymegpt.com/p/iGQS8v': '/blog/golf-membership-in-bluffton-sc/'
+    'https://blufftongc.com/': '/',
+    'https://blufftongc.com/golf': '/golf/',
+    'https://blufftongc.com/membership': '/membership/',
+    'https://blufftongc.com/lessons': '/lessons/',
+    'https://blufftongc.com/outings': '/outings/',
+    'https://blufftongc.com/blog': '/blog/',
+    'https://blufftongc.com/contact': '/contact/',
+    'https://blufftongc.com/book-tee-times': '/book-tee-times/',
+    'https://blufftongc.com/privacy': '/privacy/',
+    'https://blufftongc.com/rewards': '/rewards/',
+    'https://blufftongc.com/blog/public-golf-near-hilton-head': '/blog/public-golf-near-hilton-head/',
+    'https://blufftongc.com/blog/golf-courses-in-bluffton-sc': '/blog/golf-courses-in-bluffton-sc/',
+    'https://blufftongc.com/blog/davis-love-iii-course-strategy': '/blog/davis-love-iii-course-strategy/',
+    'https://blufftongc.com/blog/golf-lessons-in-bluffton-sc': '/blog/golf-lessons-in-bluffton-sc/',
+    'https://blufftongc.com/blog/lowcountry-golf-guide': '/blog/lowcountry-golf-guide/',
+    'https://blufftongc.com/blog/golf-membership-in-bluffton-sc': '/blog/golf-membership-in-bluffton-sc/'
   };
 
   function sitePrefix(){
