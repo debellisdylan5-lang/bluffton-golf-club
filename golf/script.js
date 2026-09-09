@@ -2,9 +2,11 @@ window.dataLayer = window.dataLayer || [];
     function trackEvent(eventName){ window.dataLayer.push({event:eventName}); }
 
 const b=document.querySelector('.menu'),m=document.getElementById('mobile-nav');
-    const closeMenu=()=>{b.setAttribute('aria-expanded','false');m.hidden=true};
-    b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));m.hidden=o});
+    const setMenuState=(open)=>{b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Close navigation':'Toggle navigation');m.hidden=!open};
+    const closeMenu=()=>setMenuState(false);
+    b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';setMenuState(!o)});
     m.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape') closeMenu()});
 
 (() => {
       const exactMap = new Map([
