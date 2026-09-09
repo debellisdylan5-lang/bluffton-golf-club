@@ -39,6 +39,8 @@ tailwind.config = {
       if (window.AOS) {
         AOS.init({ once: true, duration: 700, offset: 80 });
         document.documentElement.classList.add('aos-loaded');
+      } else {
+        document.documentElement.classList.add('aos-loaded');
       }
     })();
 
