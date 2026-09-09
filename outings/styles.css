@@ -7,7 +7,7 @@ img{max-width:100%;display:block}
 .wrap{width:min(1180px,92vw);margin:0 auto}
 .skip{position:absolute;left:-9999px;top:auto}
 .skip:focus{left:16px;top:16px;z-index:100;background:var(--gold);color:#fff;padding:12px 16px;border-radius:12px;text-decoration:none}
-.nav{position:sticky;top:0;z-index:50;width:100%;background:#F7F4ED;border-bottom:1px solid rgba(23,25,26,.10);backdrop-filter:blur(14px)}
+.nav{position:sticky;top:0;z-index:50;width:100%;background:#F7F4ED;border-bottom:1px solid rgba(23,25,26,.10);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .nav .wrap{width:min(1240px,92vw)}
 .nav-inner{min-height:88px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0;flex:0 0 auto}
@@ -19,7 +19,11 @@ img{max-width:100%;display:block}
 .navlinks a.active{color:#D9A93B}
 .navlinks a.active:after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:2px;background:rgba(217,169,59,.72);border-radius:999px}
 .utility{display:flex;align-items:center;gap:12px;flex:0 0 auto}
-.btn,.btn-secondary,.btn-primary{display:inline-flex;min-height:44px;padding:0 22px;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;font-family:Arial,Helvetica,sans-serif}
+.btn,.btn-secondary,.btn-primary,.secondary{display:inline-flex;min-height:44px;padding:0 22px;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;font-family:Arial,Helvetica,sans-serif}
+.pill{display:inline-flex;min-height:44px;padding:0 22px;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;font-family:Arial,Helvetica,sans-serif;background:#D9A93B;color:#17191A!important;border:1px solid #D9A93B;box-shadow:0 8px 22px rgba(217,169,59,.18)}
+.pill:hover,.pill:focus-visible{background:#E5B94F;border-color:#E5B94F;transform:translateY(-1px)}
+.secondary{border:1px solid rgba(23,25,26,.20);background:transparent;color:#17191A}
+.secondary:hover,.secondary:focus-visible{background:rgba(23,25,26,.04)}
 .btn{min-height:46px;padding:0 18px}
 .btn-secondary{border:1px solid rgba(23,25,26,.20);background:transparent;color:#17191A}
 .btn-secondary:hover,.btn-secondary:focus{background:rgba(23,25,26,.04)}
