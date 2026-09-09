@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/contact/</loc>
+    <lastmod>2026-09-09T03:36:19.653Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/book-tee-times/</loc>
     <lastmod>2026-09-09T03:36:13.842Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://blufftongc.com/privacy/</loc>
     <lastmod>2026-09-09T03:31:07.118Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-09-09T03:30:30.771Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
