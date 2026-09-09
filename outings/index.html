@@ -6,15 +6,17 @@
 
 
 
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+
+
+<meta property="og:url" content="https://blufftongc.com/outings">
 
 
 
 
 
-
-
-
+<meta name="twitter:url" content="https://blufftongc.com/outings">
 <link rel="canonical" href="https://blufftongc.com/outings">
 
 
@@ -27,7 +29,7 @@
       "@id":"https://blufftongc.com/#organization",
       "name":"Bluffton Golf Club",
       "url":"https://blufftongc.com/",
-      "telephone":"(843) 757-5900",
+      "telephone":"+1-843-757-5900",
       "address":{
         "@type":"PostalAddress",
         "streetAddress":"1 Eagle Pointe Drive",
@@ -43,7 +45,7 @@
       "name":"Bluffton Golf Club",
       "url":"https://blufftongc.com/",
       "image":"https://paymegpt.com/objects/quick-uploads/1257/725c4e8009fdcf0a.jpg",
-      "telephone":"(843) 757-5900",
+      "telephone":"+1-843-757-5900",
       "address":{
         "@type":"PostalAddress",
         "streetAddress":"1 Eagle Pointe Drive",
@@ -54,7 +56,21 @@
       }
     },
     {
+      "@type":"WebPage",
+      "@id":"https://blufftongc.com/outings/#webpage",
+      "url":"https://blufftongc.com/outings",
+      "name":"Private Golf Outings in Bluffton, SC | Bluffton Golf Club",
+      "description":"Plan corporate golf outings, client appreciation outings, team-building golf days, and charity fundraisers at Bluffton Golf Club in Bluffton, SC.",
+      "isPartOf":{
+        "@id":"https://blufftongc.com/#organization"
+      },
+      "about":{
+        "@id":"https://blufftongc.com/#golfcourse"
+      }
+    },
+    {
       "@type":"BreadcrumbList",
+      "@id":"https://blufftongc.com/outings/#breadcrumb",
       "itemListElement":[
         {
           "@type":"ListItem",
@@ -70,7 +86,7 @@
         }
       ]
     },
-                {
+    {
       "@type":"Service",
       "name":"Private Golf Outings",
       "serviceType":"Private golf outings",
@@ -83,9 +99,10 @@
       },
       "url":"https://blufftongc.com/outings"
     },
-        {
-          "@type":"FAQPage",
-          "mainEntity":[
+    {
+      "@type":"FAQPage",
+      "@id":"https://blufftongc.com/outings/#faq",
+      "mainEntity":[
         {
           "@type":"Question",
           "name":"What kinds of outings can BGC host?",
