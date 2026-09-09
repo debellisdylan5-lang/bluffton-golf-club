@@ -12,6 +12,27 @@
     summary { list-style: none; }
     :focus-visible { outline: 3px solid #e3c982; outline-offset: 3px; }
 
+    [data-aos] {
+      opacity: 1;
+      transform: none;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+      }
+      [data-aos].aos-animate {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
 .bgc-site-footer {
       padding: 56px 0 32px !important;
       background: #17191A !important;
