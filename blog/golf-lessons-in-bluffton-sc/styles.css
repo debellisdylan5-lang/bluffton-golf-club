@@ -12,6 +12,7 @@
     .article-copy ol { list-style: decimal; }
     .article-copy strong { color: #10263a; }
     .article-copy a { word-break: break-word; }
+    [data-aos] { opacity: 1 !important; transform: none !important; }
     .drop-cap::first-letter { float: left; margin: .08em .12em 0 0; font-family: Georgia, serif; font-size: 4.4rem; line-height: .78; color: #98753a; }
     .gold-rule { background: linear-gradient(90deg, #b9954f, rgba(185,149,79,0)); }
     details[open] summary svg { transform: rotate(45deg); }
@@ -23,6 +24,17 @@
     }
     @media (min-width: 768px) and (max-width: 1024px) {
       .article-copy { max-width: 68ch; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-aos],
+      [data-aos].aos-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+      }
     }
 
 footer.bgc-site-footer,
