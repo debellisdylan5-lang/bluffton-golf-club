@@ -50,7 +50,7 @@ window.dataLayer=window.dataLayer||[];function trackEvent(eventName,label){windo
   }
 
   function rewrite(root) {
-    const nodes = root.querySelectorAll ? root.querySelectorAll('a[href], [data-article-url]') : [];
+    const nodes = root.querySelectorAll ? Array.from(root.querySelectorAll('a[href], [data-article-url]')) : [];
     if (root.matches && (root.matches('a[href]') || root.matches('[data-article-url]'))) {
       nodes.unshift(root);
     }
