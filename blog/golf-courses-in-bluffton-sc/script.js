@@ -16,7 +16,9 @@ tailwind.config = {
     };
 
 // ===== SCROLL REVEALS =====
-    AOS.init({ once: true, duration: 700, offset: 80 });
+    if (window.AOS) {
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    }
 
     // ===== MOBILE NAVIGATION =====
     const menuButton = document.getElementById('menuButton');
