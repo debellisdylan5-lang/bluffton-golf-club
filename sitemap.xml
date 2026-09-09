@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blufftongc.com/outings/</loc>
-    <lastmod>2026-09-09T00:23:57.982Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/membership/</loc>
-    <lastmod>2026-09-09T00:23:44.006Z</lastmod>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-09-09T00:30:17.623Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-09-09T00:23:37.042Z</lastmod>
+    <lastmod>2026-09-09T00:30:12.630Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/outings/</loc>
+    <lastmod>2026-09-09T00:30:11.883Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/privacy/</loc>
-    <lastmod>2026-09-09T00:23:30.154Z</lastmod>
+    <lastmod>2026-09-09T00:30:11.061Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/lessons/</loc>
-    <lastmod>2026-09-09T00:23:17.469Z</lastmod>
+    <lastmod>2026-09-09T00:30:10.283Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-09-09T00:23:10.358Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/book-tee-times/</loc>
-    <lastmod>2026-09-09T00:23:03.670Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/golf/</loc>
-    <lastmod>2026-09-09T00:22:56.769Z</lastmod>
+    <loc>https://blufftongc.com/membership/</loc>
+    <lastmod>2026-09-09T00:30:09.361Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
-    <lastmod>2026-09-09T00:22:40.634Z</lastmod>
+    <lastmod>2026-09-09T00:30:08.286Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/golf/</loc>
+    <lastmod>2026-09-09T00:30:01.911Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
-    <lastmod>2026-09-09T00:22:34.303Z</lastmod>
+    <lastmod>2026-09-09T00:30:01.189Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
-    <lastmod>2026-09-09T00:22:27.353Z</lastmod>
+    <loc>https://blufftongc.com/book-tee-times/</loc>
+    <lastmod>2026-09-09T00:30:00.381Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/blog/golf-membership-in-bluffton-sc/</loc>
-    <lastmod>2026-09-09T00:22:20.245Z</lastmod>
+    <loc>https://blufftongc.com/contact/</loc>
+    <lastmod>2026-09-09T00:29:59.657Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
-    <lastmod>2026-09-09T00:22:02.367Z</lastmod>
+    <lastmod>2026-09-09T00:29:58.741Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
-    <lastmod>2026-09-09T00:21:55.718Z</lastmod>
+    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
+    <lastmod>2026-09-09T00:29:57.892Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-09-09T00:21:48.936Z</lastmod>
+    <loc>https://blufftongc.com/blog/golf-membership-in-bluffton-sc/</loc>
+    <lastmod>2026-09-09T00:29:56.937Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-09-09T00:21:39.545Z</lastmod>
+    <lastmod>2026-09-09T00:29:56.053Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
+    <lastmod>2026-09-09T00:29:54.645Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
