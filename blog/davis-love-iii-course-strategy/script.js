@@ -56,7 +56,9 @@ tailwind.config = {
 
 // ===== EDITORIAL SCROLL REVEALS =====
     // Purpose: Adds restrained motion to summary cards and calls to action.
-    AOS.init({ once: true, duration: 700, offset: 80 });
+    if (window.AOS) {
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    }
 
 (function () {
       const EXACT_HOST = 'paymegpt.com';
