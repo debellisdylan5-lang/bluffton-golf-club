@@ -57,7 +57,9 @@ const menuButton = document.getElementById("menu-button");
       "privacy_click"
     ];
 
-AOS.init({ once: true, duration: 700, offset: 80 });
+if (window.AOS) {
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    }
 
 (function () {
       const routes = {
