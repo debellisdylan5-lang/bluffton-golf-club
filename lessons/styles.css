@@ -620,6 +620,11 @@
     }
 }
 
+/* Readable accent text on light surfaces and clear anchor landing positions. */
+.bg-ivory .eyebrow{color:#796338}
+.site-header a[href="https://blufftongc.com/lessons"]{color:#806019}
+#pricing,#lesson-request{scroll-margin-top:110px}
+
 html{scroll-behavior:smooth;box-sizing:border-box;overflow-x:hidden}
     *,*:before,*:after{box-sizing:inherit}
     body{margin:0;background:#071D35;color:#F7F4ED;overflow-x:hidden;font-family:Inter,Arial,sans-serif}
