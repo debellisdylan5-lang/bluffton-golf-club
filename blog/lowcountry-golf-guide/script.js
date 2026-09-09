@@ -49,7 +49,11 @@ const menuToggle = document.getElementById('menu-toggle');
       });
     });
 
-AOS.init({ once: true, duration: 700, offset: 80 });
+if (window.AOS) {
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    } else {
+      document.documentElement.classList.add('no-aos');
+    }
 
 (function () {
       const PAYMEGPT_HOST = 'paymegpt.com';
@@ -86,12 +90,19 @@ AOS.init({ once: true, duration: 700, offset: 80 });
       function rewriteValue(value) {
         try {
           const url = new URL(value, location.href);
-          const mapped = MAP[url.origin + url.pathname];
+          const key = url.origin + url.pathname;
+          const mapped = MAP[key];
           if (!mapped) return value;
+          if (location.hostname === PAYMEGPT_HOST) return value;
           return buildPath(mapped) + url.search + url.hash;
         } catch (e) {
           return value;
         }
+      }
+
+      function shouldRewriteAttribute(value) {
+        if (!value) return false;
+        return value.indexOf('https://blufftongc.com/') === 0 || value.indexOf('https://paymegpt.com/p/') === 0;
       }
 
       function rewriteNode(node) {
@@ -99,13 +110,13 @@ AOS.init({ once: true, duration: 700, offset: 80 });
         const el = node;
         if (el.matches && el.matches('a[href]')) {
           const href = el.getAttribute('href');
-          if (href && href.indexOf('https://paymegpt.com/p/') === 0) {
+          if (shouldRewriteAttribute(href)) {
             el.setAttribute('href', rewriteValue(href));
           }
         }
         if (el.hasAttribute && el.hasAttribute('data-article-url')) {
           const val = el.getAttribute('data-article-url');
-          if (val && val.indexOf('https://paymegpt.com/p/') === 0) {
+          if (shouldRewriteAttribute(val)) {
             el.setAttribute('data-article-url', rewriteValue(val));
           }
         }
