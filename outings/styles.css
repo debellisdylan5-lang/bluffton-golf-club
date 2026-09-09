@@ -183,8 +183,8 @@ details p{color:var(--muted);margin:0 0 12px;font-family:Arial,Helvetica,sans-se
 .address-box strong{color:var(--blue)}
 
 .outing-form-section{background:linear-gradient(180deg,#fff 0%,#fbf8f1 100%)}
-.outing-form-frame{width:100%;min-height:1000px;border:0;border-radius:24px;background:#fff;box-shadow:var(--shadow)}
-.outing-form-shell{border:1px solid var(--line);border-radius:30px;padding:18px;background:#fff;box-shadow:var(--shadow)}
+.outing-form-shell{border:1px solid var(--line);border-radius:28px;padding:14px;background:#fff;box-shadow:var(--shadow);overflow:hidden}
+.outing-form-frame{display:block;width:100%;min-height:1180px;border:0;border-radius:18px;background:#fff;box-shadow:none;overflow:hidden}
 .outing-form-intro{max-width:820px}
 @media(max-width:760px){
 .section,.cta{padding:76px 0}
@@ -208,7 +208,8 @@ details{padding:16px 16px 4px}
 .bgc-site-footer__logo{max-width:155px;max-height:110px}
 .bgc-site-footer__cta .pill,.bgc-site-footer__cta .secondary{width:100%}
 .bgc-site-footer__rail{display:flex;flex-direction:column;align-items:flex-start}
-.outing-form-frame{min-height:1100px}
+.outing-form-shell{padding:12px;border-radius:24px}
+.outing-form-frame{min-height:1380px;border-radius:16px}
 }
 
 .sticky-bar{display:none}
