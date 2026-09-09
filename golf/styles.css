@@ -105,7 +105,7 @@
       .bgc-site-footer__actions .bgc-site-footer__cta{flex:1 1 220px}
     }
     @media(max-width:767px){
-      .bgc-site-footer{padding:52px 0 32px}
+      .bgc-site-footer{padding:52px 0 calc(32px + env(safe-area-inset-bottom) + 88px)}
       .bgc-site-footer__grid{grid-template-columns:1fr;gap:28px}
       .bgc-site-footer__logo-tile{width:165px;height:125px}
       .bgc-site-footer__logo{max-width:136px;max-height:96px}
