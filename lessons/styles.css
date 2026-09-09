@@ -10,6 +10,19 @@ html{scroll-behavior:smooth;box-sizing:border-box;overflow-x:hidden}
     .nav-link:after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1px;background:#AD9362;transition:right .25s}
     .nav-link:hover:after,.nav-link:focus:after{right:0}
     html:not(.aos-loaded) [data-aos]{opacity:1 !important;transform:none !important;visibility:visible !important;transition:none !important}
+    @media (prefers-reduced-motion: reduce){
+      html [data-aos]{
+        opacity:1 !important;
+        transform:none !important;
+        visibility:visible !important;
+        transition:none !important;
+        animation:none !important
+      }
+      html [data-aos].aos-animate{
+        opacity:1 !important;
+        transform:none !important
+      }
+    }
       .site-header{height:clamp(76px,8vw,94px)}
   .site-header .header-inner{min-height:88px}
   .site-header .logo-mark{max-height:66px;width:auto}
