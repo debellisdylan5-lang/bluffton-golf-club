@@ -27,22 +27,22 @@ if (navToggle && navToggleLabel) {
 
 (() => {
   const BGC_PAGE_MAP = new Map([
-    ['https://paymegpt.com/p/SUpiU9p', '/'],
-    ['https://paymegpt.com/p/7kEfQDVgfm', '/golf/'],
-    ['https://paymegpt.com/p/5c8a7v9Aa', '/membership/'],
-    ['https://paymegpt.com/p/BbtfDrfYx', '/lessons/'],
-    ['https://paymegpt.com/p/UrkWi8r', '/outings/'],
-    ['https://paymegpt.com/p/fHpcvCS2Y', '/blog/'],
-    ['https://paymegpt.com/p/fDMLxwZ8', '/contact/'],
-    ['https://paymegpt.com/p/S6jARJrr', '/book-tee-times/'],
-    ['https://paymegpt.com/p/WSYbZ2a6q', '/privacy/'],
-    ['https://paymegpt.com/p/S48UZA4', '/rewards/'],
-    ['https://paymegpt.com/p/QdFmcQ', '/blog/public-golf-near-hilton-head/'],
-    ['https://paymegpt.com/p/TVSWTAP', '/blog/golf-courses-in-bluffton-sc/'],
-    ['https://paymegpt.com/p/Q4j95JW9HH', '/blog/davis-love-iii-course-strategy/'],
-    ['https://paymegpt.com/p/AVRKGkLz', '/blog/golf-lessons-in-bluffton-sc/'],
-    ['https://paymegpt.com/p/DVjf4mfhk', '/blog/lowcountry-golf-guide/'],
-    ['https://paymegpt.com/p/iGQS8v', '/blog/golf-membership-in-bluffton-sc/']
+    ['https://blufftongc.com/', '/'],
+    ['https://blufftongc.com/golf', '/golf/'],
+    ['https://blufftongc.com/membership', '/membership/'],
+    ['https://blufftongc.com/lessons', '/lessons/'],
+    ['https://blufftongc.com/outings', '/outings/'],
+    ['https://blufftongc.com/blog', '/blog/'],
+    ['https://blufftongc.com/contact', '/contact/'],
+    ['https://blufftongc.com/book-tee-times', '/book-tee-times/'],
+    ['https://blufftongc.com/privacy', '/privacy/'],
+    ['https://blufftongc.com/rewards', '/rewards/'],
+    ['https://blufftongc.com/blog/public-golf-near-hilton-head', '/blog/public-golf-near-hilton-head/'],
+    ['https://blufftongc.com/blog/golf-courses-in-bluffton-sc', '/blog/golf-courses-in-bluffton-sc/'],
+    ['https://blufftongc.com/blog/davis-love-iii-course-strategy', '/blog/davis-love-iii-course-strategy/'],
+    ['https://blufftongc.com/blog/golf-lessons-in-bluffton-sc', '/blog/golf-lessons-in-bluffton-sc/'],
+    ['https://blufftongc.com/blog/lowcountry-golf-guide', '/blog/lowcountry-golf-guide/'],
+    ['https://blufftongc.com/blog/golf-membership-in-bluffton-sc', '/blog/golf-membership-in-bluffton-sc/']
   ]);
 
   const isPayMeGPTHost = location.hostname === 'paymegpt.com';
