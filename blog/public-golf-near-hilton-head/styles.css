@@ -17,6 +17,24 @@
     summary::-webkit-details-marker { display: none; }
     summary { list-style: none; }
 
+    @media (prefers-reduced-motion: reduce) {
+      [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      [data-aos].aos-animate {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    html:not(.has-aos) [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
     /* ===== NAVBAR NORMALIZATION ===== */
     header[data-section="navbar"] .desktop-nav,
     header[data-section="navbar"] .desktop-actions {
