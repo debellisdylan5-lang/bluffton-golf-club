@@ -658,7 +658,7 @@ html{scroll-behavior:smooth;box-sizing:border-box;overflow-x:hidden}
     .section{padding:clamp(3.5rem,7vw,7rem) 0}
     .text-balance{text-wrap:balance}
     details[open] .faq-plus{transform:rotate(45deg)}
-    .lesson-frame{width:100%;height:1040px;min-height:1040px;border:1px solid rgba(11,39,71,.14);border-radius:1.5rem;background:#fff;overflow:hidden}
+    .lesson-frame{width:100%;height:1550px;min-height:1550px;border:1px solid rgba(11,39,71,.14);border-radius:1.5rem;background:#fff;overflow:hidden}
     .mobile-actions{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;padding:.65rem .65rem calc(.65rem + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(7,29,53,0),rgba(7,29,53,.9) 18%,rgba(7,29,53,.98));backdrop-filter:blur(18px);padding-top:1.4rem}
     .mobile-actions a{min-height:44px;border-radius:9999px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.78rem;line-height:1.1;padding:.7rem .75rem}
     .mobile-actions .strong{background:#C7A35B;color:#071B3A;font-weight:800}
@@ -692,7 +692,7 @@ html{scroll-behavior:smooth;box-sizing:border-box;overflow-x:hidden}
       .bgc-site-footer .__actions .__cta{min-width:240px}
     }
     @media (max-width: 768px){
-      .lesson-frame{height:1040px;min-height:1040px}
+      .lesson-frame{height:1550px;min-height:1550px}
       .section{padding:clamp(3rem,8vw,5rem) 0}
       .bgc-site-footer{padding:52px 0 32px}
       .bgc-site-footer .__grid{grid-template-columns:1fr;gap:28px}
@@ -705,10 +705,10 @@ html{scroll-behavior:smooth;box-sizing:border-box;overflow-x:hidden}
       .bgc-site-footer .__cta{width:100%}
     }
     @media (min-width: 769px) and (max-width: 1024px){
-      .lesson-frame{height:960px;min-height:960px}
+      .lesson-frame{height:1400px;min-height:1400px}
     }
     @media (min-width: 1025px){
-      .lesson-frame{height:900px;min-height:900px}
+      .lesson-frame{height:1320px;min-height:1320px}
     }
     @media (min-width: 769px){
       .mobile-actions{display:none}
