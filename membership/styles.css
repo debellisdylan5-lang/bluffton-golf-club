@@ -58,7 +58,7 @@ details{border:1px solid var(--line);background:#fff;padding:14px 16px}
 summary{cursor:pointer;font-weight:700;color:var(--navy);list-style:none}
 summary::-webkit-details-marker{display:none}
 .form-wrap{border:1px solid var(--line);background:#fff;padding:18px;box-shadow:0 22px 60px rgba(18,58,111,.05)}
-iframe{width:100%;border:0;min-height:600px;background:#fff}
+iframe{width:100%;border:0;min-height:1100px;background:#fff}
 .bgc-site-footer{padding:56px 0 32px;background:#17191A;color:#F5F1E8;border-top:1px solid rgba(245,241,232,.12)}
 .bgc-site-footer__wrap{width:min(1240px,92vw);margin:0 auto}
 .bgc-site-footer__grid{display:grid;grid-template-columns:1.15fr .95fr .9fr;gap:34px;align-items:start}
@@ -105,7 +105,7 @@ p,.hero p,.section p,.panel p,.faq p,.small{font-size:1rem}
 .panel,.membership-card .content{padding:22px}
 .media{border-radius:0}
 .feature-grid{gap:16px}
-iframe{min-height:600px}
+iframe{min-height:1900px}
 .bgc-site-footer{padding:52px 20px 28px}
 .bgc-site-footer__grid{grid-template-columns:1fr;gap:24px}
 .bgc-site-footer__brand{grid-column:1 / -1}
@@ -123,7 +123,7 @@ body{padding-bottom:84px}
 .panel,.membership-card .content{padding:18px}
 .pill{width:100%}
 .form-wrap{padding:12px}
-iframe{min-height:600px}
+iframe{min-height:1700px}
 .bgc-site-footer{padding:48px 16px 28px}
 .bgc-site-footer__grid{grid-template-columns:1fr;gap:18px}
 .bgc-site-footer__logo-tile{width:165px;height:125px}
