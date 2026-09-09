@@ -20,7 +20,10 @@ tailwind.config = {
       }
     };
 
-AOS.init({ once: true, duration: 700, offset: 80 });
+if (window.AOS) {
+      document.documentElement.classList.add('has-aos');
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    }
 
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
