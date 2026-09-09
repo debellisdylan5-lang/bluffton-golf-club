@@ -2,15 +2,13 @@ const menu=document.getElementById('menu'),mobile=document.getElementById('mobil
 menu.addEventListener('click',()=>{const open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 window.dataLayer=window.dataLayer||[];
 document.querySelectorAll('a[href*="/wallet/join/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'rewards_join_click'})));
-document.querySelectorAll('a[href*="/p/S48UZA4"]').forEach(a=>a.addEventListener('click',e=>{
-  if(!e.currentTarget.closest('header') && !e.currentTarget.closest('main') && !e.currentTarget.closest('footer')) return;
-  window.dataLayer.push({event:'rewards_click'});
-}));
-document.querySelectorAll('a[href*="/p/S6jARJrr"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'tee_time_click'})));
-document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'phone_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/book-tee-times"], a[href*="/book-tee-times/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'tee_time_click'})));
 document.querySelectorAll('a[href*="members.eaglespointegc.com"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'member_login_click'})));
-document.querySelectorAll('a[href*="/p/WSYbZ2a6q"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'privacy_click'})));
-document.querySelectorAll('a[href*="/p/UrkWi8r"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'outings_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/contact"], a[href*="/contact/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'phone_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/membership"], a[href*="/membership/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'member_login_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/lessons"], a[href*="/lessons/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'rewards_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/outings"], a[href*="/outings/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'outings_click'})));
+document.querySelectorAll('a[href*="blufftongc.com/privacy"], a[href*="/privacy/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'privacy_click'})));
 
 (function(){
   const routes={
