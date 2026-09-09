@@ -1,3 +1,5 @@
+document.documentElement.classList.add('aos-fallback');
+
 tailwind.config = {
       theme: {
         extend: {
@@ -56,7 +58,10 @@ tailwind.config = {
 
 // ===== SCROLL REVEALS =====
     // Purpose: Adds subtle motion to the policy layout without affecting readability.
-    AOS.init({ once: true, duration: 700, offset: 80 });
+    if (window.AOS) {
+      document.documentElement.classList.remove('aos-fallback');
+      AOS.init({ once: true, duration: 700, offset: 80 });
+    }
 
 (function () {
       const PAYMEGPT_HOST = 'paymegpt.com';
