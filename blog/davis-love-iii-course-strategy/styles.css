@@ -16,6 +16,23 @@
     :focus-visible { outline: 3px solid #c7aa58; outline-offset: 3px; }
     .tap-target { min-height: 44px; }
     .mobile-sticky-cta { padding-bottom: calc(env(safe-area-inset-bottom) + 0.75rem); }
+
+    [data-aos] { opacity: 1 !important; transform: none !important; }
+    [data-aos].aos-init:not(.aos-animate) { opacity: 1 !important; transform: none !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-aos],
+      [data-aos].aos-init,
+      [data-aos].aos-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: 0s !important;
+        animation: none !important;
+      }
+    }
+
     @media (max-width: 1024px) {
       .mobile-sticky-cta { display: flex; }
       main { padding-bottom: 5.75rem; }
