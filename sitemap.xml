@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/book-tee-times/</loc>
+    <lastmod>2026-09-09T02:59:04.015Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
     <lastmod>2026-09-09T02:58:57.926Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://blufftongc.com/outings/</loc>
     <lastmod>2026-09-09T02:54:51.183Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/book-tee-times/</loc>
-    <lastmod>2026-09-09T02:53:57.510Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
