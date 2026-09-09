@@ -16,6 +16,19 @@
     details summary::-webkit-details-marker { display: none; }
     :focus-visible { outline: 3px solid #d0ab62; outline-offset: 3px; }
     .sticky-mobile-actions { position: sticky; bottom: 0; z-index: 45; }
+    [data-aos] { opacity: 1; transform: none; }
+    [data-aos].aos-animate { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      [data-aos],
+      [data-aos].aos-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        transition-property: none !important;
+        transition-duration: 0ms !important;
+        animation: none !important;
+      }
+    }
 
     .bgc-site-footer {
       background: #17191A;
