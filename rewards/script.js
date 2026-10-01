@@ -3,7 +3,7 @@ menu.addEventListener('click',()=>{const open=mobile.classList.toggle('open');me
 window.dataLayer=window.dataLayer||[];
 document.querySelectorAll('a[href*="/wallet/join/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'rewards_join_click'})));
 document.querySelectorAll('a[href*="blufftongc.com/book-tee-times"], a[href*="/book-tee-times/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'tee_time_click'})));
-document.querySelectorAll('a[href*="members.eaglespointegc.com"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'member_login_click'})));
+document.querySelectorAll('a[href*="members.blufftongc.com"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'member_login_click'})));
 document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'phone_click'})));
 document.querySelectorAll('a[href*="blufftongc.com/contact"], a[href*="/contact/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'contact_click'})));
 document.querySelectorAll('a[href*="blufftongc.com/membership"], a[href*="/membership/"]').forEach(a=>a.addEventListener('click',()=>window.dataLayer.push({event:'membership_click'})));
