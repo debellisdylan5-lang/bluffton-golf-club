@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-10-01T15:04:58.092Z</lastmod>
+    <lastmod>2026-10-01T15:05:41.283Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/contact/</loc>
+    <lastmod>2026-10-01T15:05:10.494Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-01T15:05:05.615Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -13,11 +23,6 @@
   <url>
     <loc>https://blufftongc.com/outings/</loc>
     <lastmod>2026-10-01T15:04:34.851Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-10-01T15:04:03.523Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -58,11 +63,6 @@
   <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-10-01T15:02:38.050Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-10-01T15:02:29.485Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
