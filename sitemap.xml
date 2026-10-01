@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blufftongc.com/lessons/</loc>
-    <lastmod>2026-09-09T15:27:50.069Z</lastmod>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-01T15:02:21.706Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-09-09T15:17:30.053Z</lastmod>
+    <lastmod>2026-10-01T15:02:07.264Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-01T15:01:59.627Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/outings/</loc>
-    <lastmod>2026-09-09T15:17:16.866Z</lastmod>
+    <lastmod>2026-10-01T15:01:54.410Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/rewards/</loc>
+    <lastmod>2026-10-01T15:01:49.105Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/lessons/</loc>
+    <lastmod>2026-10-01T15:01:43.177Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/membership/</loc>
-    <lastmod>2026-09-09T15:16:43.984Z</lastmod>
+    <lastmod>2026-10-01T15:01:36.975Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/golf/</loc>
+    <lastmod>2026-10-01T15:01:31.235Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -48,26 +68,6 @@
   <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-09-09T14:15:56.802Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-09-09T03:38:37.646Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-09-09T03:37:55.283Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-09-09T03:36:56.175Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/golf/</loc>
-    <lastmod>2026-09-09T03:36:24.984Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
