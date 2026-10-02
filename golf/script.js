@@ -1,4 +1,9 @@
 window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MXRJCSN55F');
+
+window.dataLayer = window.dataLayer || [];
     function trackEvent(eventName){ window.dataLayer.push({event:eventName}); }
 
 const b=document.querySelector('.menu'),m=document.getElementById('mobile-nav');
