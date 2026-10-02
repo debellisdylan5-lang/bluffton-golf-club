@@ -1,3 +1,8 @@
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MXRJCSN55F');
+
 const menu=document.getElementById('menu'),mobile=document.getElementById('mobileNav');
 menu.addEventListener('click',()=>{const open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 window.dataLayer=window.dataLayer||[];
