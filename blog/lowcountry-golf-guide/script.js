@@ -1,3 +1,8 @@
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MXRJCSN55F');
+
 const menuToggle = document.getElementById('menu-toggle');
     const primaryMenu = document.getElementById('primary-menu');
     if (menuToggle && primaryMenu) {
