@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-02T23:39:55.425Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/</loc>
     <lastmod>2026-10-02T23:39:48.988Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-10-02T23:39:30.802Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-10-02T23:39:29.761Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
