@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-02T23:04:10.436Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/book-tee-times/</loc>
+    <lastmod>2026-10-02T23:04:02.772Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-10-01T15:06:02.640Z</lastmod>
+    <lastmod>2026-10-02T23:04:01.863Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/rewards/</loc>
+    <lastmod>2026-10-02T23:04:00.698Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/lessons/</loc>
+    <lastmod>2026-10-02T23:03:59.781Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/</loc>
     <lastmod>2026-10-01T15:05:52.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-10-01T15:05:41.283Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -33,11 +48,6 @@
   <url>
     <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
     <lastmod>2026-10-01T15:03:48.186Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/book-tee-times/</loc>
-    <lastmod>2026-10-01T15:03:33.829Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -63,16 +73,6 @@
   <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-10-01T15:02:38.050Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-01T15:02:21.706Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/lessons/</loc>
-    <lastmod>2026-10-01T15:01:43.177Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
