@@ -52,7 +52,7 @@ document.querySelectorAll('a[href*="blufftongc.com/rewards"], a[href*="/rewards/
     root.querySelectorAll('a[href]').forEach(a=>{
       const href=a.getAttribute('href');
       if(!href) return;
-      if(href.includes('/objects/')||href.includes('/forms/')||href.includes('/wallet/join/')||href.startsWith('tel:')||href.startsWith('mailto:')||href.includes('members.eaglespointegc.com')||href.includes('golfscape')||href.startsWith('http')&& !href.startsWith('https://paymegpt.com/p/')) return;
+      if(href.includes('/objects/')||href.includes('/forms/')||href.includes('/wallet/join/')||href.startsWith('tel:')||href.startsWith('mailto:')||href.includes('members.blufftongc.com')||href.includes('golfscape')||href.startsWith('http')&& !href.startsWith('https://paymegpt.com/p/')) return;
       a.href=rewriteUrl(href);
     });
     root.querySelectorAll('[data-article-url]').forEach(el=>{
