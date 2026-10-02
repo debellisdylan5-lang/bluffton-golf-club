@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
+    <lastmod>2026-10-02T23:07:55.276Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/blog/golf-membership-in-bluffton-sc/</loc>
     <lastmod>2026-10-02T23:07:49.256Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
     <lastmod>2026-10-02T23:04:53.204Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
-    <lastmod>2026-10-02T23:04:47.527Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
