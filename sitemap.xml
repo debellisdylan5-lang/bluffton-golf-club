@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/rewards/</loc>
+    <lastmod>2026-10-02T23:05:44.583Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/privacy/</loc>
     <lastmod>2026-10-02T23:05:37.786Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/</loc>
     <lastmod>2026-10-02T23:04:10.436Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-10-02T23:04:00.698Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
