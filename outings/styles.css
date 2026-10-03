@@ -295,3 +295,48 @@ body > .mobile-actions{display:none!important}
   .hero-actions{display:grid!important;grid-template-columns:1fr!important}
   .hero-actions>a{width:100%!important}
 }
+
+@media (max-width:760px){
+  section.cta .panel{
+    display:block!important;
+    width:min(92vw,680px)!important;
+    padding:28px 22px!important;
+    overflow:visible!important;
+  }
+  section.cta .panel > div:first-child{
+    width:100%!important;
+    min-width:0!important;
+  }
+  section.cta .panel h2{
+    width:100%!important;
+    max-width:none!important;
+    font-size:clamp(2.35rem,11vw,3.15rem)!important;
+    line-height:.94!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+  }
+  section.cta .panel p{
+    width:100%!important;
+    max-width:none!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+  }
+  section.cta .panel .hero-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    width:100%!important;
+    gap:12px!important;
+    margin-top:26px!important;
+  }
+  section.cta .panel .hero-actions a{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:50px!important;
+    padding:0 18px!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+    writing-mode:horizontal-tb!important;
+  }
+}
