@@ -612,7 +612,7 @@ h1,h2,h3{
 .faq summary::-webkit-details-marker{display:none}
 .faq p{color:var(--muted);margin-top:10px}
 .mobilebar{display:none}
-@media(max-width:1024px){
+@media(max-width:1100px){
   .nav-inner{min-height:76px;grid-template-columns:auto auto;justify-content:space-between;padding:8px 0}
   .brand-text{display:none}
   .navlinks,.utility{display:none}
@@ -637,24 +637,8 @@ h1,h2,h3{
   .section h2{font-size:clamp(2.2rem,8vw,4.2rem)}
   .hero h1{font-size:clamp(3rem,11vw,5.2rem)}
   .hero p,.section-head p,.lead,.story p,.rewards-copy p,.booking p,.contact-box p,.faq p{font-size:1rem}
-  .mobilebar{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:8px;
-    position:fixed;
-    left:10px;right:10px;bottom:10px;z-index:50;
-    background:#ffffffef;
-    backdrop-filter:blur(10px);
-    border:1px solid var(--line);
-    padding:8px;
-    box-shadow:var(--shadow-2);
-  }
-  .mobilebar .btn{min-height:48px;padding:0 10px;font-size:10px}
-  .mobilebar .btn:nth-child(2){background:var(--gold);color:#fff;border-color:transparent}
-  .mobilebar .btn:nth-child(3){background:#fff;color:var(--navy);border-color:rgba(7,29,53,.14)}
 }
 @media(max-width:767px){
-  body{padding-bottom:86px}
   .wrap{width:min(1240px,92vw)}
   .nav-inner{gap:10px}
   .logo{width:auto;max-height:54px;max-width:66vw}
