@@ -21,7 +21,7 @@ tailwind.config = {
     };
     void 0;
 
-(function () {
+!function () {
         if (!window.dataLayer || !Array.isArray(window.dataLayer)) return;
         const pushFooterEvent = (action, label) => {
           window.dataLayer.push({
