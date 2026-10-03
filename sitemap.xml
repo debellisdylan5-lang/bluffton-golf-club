@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blufftongc.com/lessons/</loc>
-    <lastmod>2026-10-03T00:55:37.722Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
-    <lastmod>2026-10-03T00:46:26.152Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
-    <lastmod>2026-10-03T00:46:25.701Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
-    <lastmod>2026-10-03T00:46:25.267Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
-    <lastmod>2026-10-03T00:46:24.708Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
-    <lastmod>2026-10-03T00:46:24.241Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/privacy/</loc>
-    <lastmod>2026-10-03T00:46:23.742Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/book-tee-times/</loc>
-    <lastmod>2026-10-03T00:46:23.280Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-10-03T00:46:22.822Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-10-03T00:46:22.002Z</lastmod>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-03T01:00:55.439Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/outings/</loc>
-    <lastmod>2026-10-03T00:46:21.637Z</lastmod>
+    <lastmod>2026-10-03T00:58:12.296Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-10-03T00:46:20.944Z</lastmod>
+    <loc>https://blufftongc.com/book-tee-times/</loc>
+    <lastmod>2026-10-03T00:57:53.216Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/membership/</loc>
-    <lastmod>2026-10-03T00:46:19.978Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/golf/</loc>
-    <lastmod>2026-10-03T00:46:19.605Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-03T00:46:18.790Z</lastmod>
+    <loc>https://blufftongc.com/privacy/</loc>
+    <lastmod>2026-10-03T00:57:52.489Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blufftongc.com/blog/golf-membership-in-bluffton-sc/</loc>
-    <lastmod>2026-10-03T00:45:01.662Z</lastmod>
+    <lastmod>2026-10-03T00:57:51.563Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
+    <lastmod>2026-10-03T00:57:50.640Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
+    <lastmod>2026-10-03T00:57:49.561Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
+    <lastmod>2026-10-03T00:57:48.557Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
+    <lastmod>2026-10-03T00:57:47.467Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
+    <lastmod>2026-10-03T00:57:46.372Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-03T00:57:45.480Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/rewards/</loc>
+    <lastmod>2026-10-03T00:57:44.613Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/contact/</loc>
+    <lastmod>2026-10-03T00:57:43.775Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/lessons/</loc>
+    <lastmod>2026-10-03T00:57:42.820Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/membership/</loc>
+    <lastmod>2026-10-03T00:57:42.060Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/golf/</loc>
+    <lastmod>2026-10-03T00:57:41.285Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
