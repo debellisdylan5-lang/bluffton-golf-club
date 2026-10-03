@@ -340,3 +340,67 @@ body > .mobile-actions{display:none!important}
     writing-mode:horizontal-tb!important;
   }
 }
+
+@media (max-width:760px){
+  section.cta > .wrap.panel{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    align-items:start!important;
+    gap:24px!important;
+    width:92vw!important;
+    max-width:680px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:30px 24px!important;
+  }
+  section.cta > .wrap.panel > *{
+    grid-column:1/-1!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  section.cta > .wrap.panel > div:first-child h2{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    font-size:clamp(2.25rem,10.5vw,3rem)!important;
+    line-height:.96!important;
+    letter-spacing:-.05em!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+    white-space:normal!important;
+  }
+  section.cta > .wrap.panel > div:first-child p{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+  }
+  section.cta > .wrap.panel > .hero-actions{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;
+    margin:0!important;
+  }
+  section.cta > .wrap.panel > .hero-actions > a{
+    box-sizing:border-box!important;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    min-height:52px!important;
+    height:auto!important;
+    padding:12px 18px!important;
+    border-radius:999px!important;
+    writing-mode:horizontal-tb!important;
+    text-orientation:mixed!important;
+    white-space:normal!important;
+    word-break:keep-all!important;
+    overflow-wrap:normal!important;
+    line-height:1.25!important;
+  }
+}
