@@ -59,9 +59,9 @@ h3{font-size:1.45rem;margin:0 0 10px}
 .membership-card ul{margin:16px 0 0;padding:0 0 0 18px;color:#465460}
 .membership-card li{margin-bottom:8px}
 .faq{display:grid;gap:12px}
-details{border:1px solid var(--line);background:#fff;padding:14px 16px}
-summary{cursor:pointer;font-weight:700;color:var(--navy);list-style:none}
-summary::-webkit-details-marker{display:none}
+.faq details{border:1px solid var(--line);background:#fff;padding:14px 16px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--navy);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
 .form-wrap{border:1px solid var(--line);background:#fff;padding:0;box-shadow:0 22px 60px rgba(18,58,111,.05);overflow:hidden;border-radius:0}
 .form-wrap iframe{display:block;width:100%;border:0;min-height:1120px;background:#fff;overflow:hidden}
 .bgc-site-footer{padding:56px 0 32px;background:#17191A;color:#F5F1E8;border-top:1px solid rgba(245,241,232,.12)}
