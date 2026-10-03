@@ -48,7 +48,7 @@ window.dataLayer=window.dataLayer||[];function trackEvent(eventName,label){windo
       href.startsWith('https://paymegpt.com/join/') ||
       href.includes('golfscape.com') ||
       href.includes('google.com/maps') ||
-      href.includes('members.blufftongc.com')
+      href.includes('members.eaglespointegc.com')
     ) {
       return;
     }
