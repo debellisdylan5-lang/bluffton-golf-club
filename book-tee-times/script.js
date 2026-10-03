@@ -43,7 +43,7 @@ window.dataLayer=window.dataLayer||[];function trackEvent(eventName,label){windo
       href.startsWith('mailto:') ||
       href.includes('/objects/') ||
       href.includes('/forms/') ||
-      href.includes('members.blufftongc.com') ||
+      href.includes('members.eaglespointegc.com') ||
       href.includes('golfscape.com') ||
       href.includes('/wallet/') ||
       href.includes('/join/');
