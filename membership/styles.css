@@ -230,3 +230,6 @@ body > .mobile-actions{display:none!important}
  #bgc-nav-v2 details.bgc-nav-v2__mobile{border:0!important;background:transparent!important;padding:0!important;margin:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;width:auto!important;height:auto!important;min-height:0!important}
  #bgc-nav-v2 details.bgc-nav-v2__mobile>summary{box-sizing:border-box!important}
 }
+
+.hero .actions .pill.alt{color:#fff!important;border-color:#fff!important;background:transparent!important}
+.hero .actions .pill.alt:hover,.hero .actions .pill.alt:focus{color:#17191a!important;background:#fff!important;border-color:#fff!important}
