@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-03T14:23:22.333Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/book-tee-times/</loc>
+    <lastmod>2026-10-03T14:23:15.612Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/contact/</loc>
+    <lastmod>2026-10-03T14:23:13.032Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-03T14:23:10.444Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/outings/</loc>
-    <lastmod>2026-10-03T14:19:17.829Z</lastmod>
+    <lastmod>2026-10-03T14:23:08.054Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/rewards/</loc>
+    <lastmod>2026-10-03T14:23:05.635Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/lessons/</loc>
+    <lastmod>2026-10-03T14:23:03.439Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/membership/</loc>
+    <lastmod>2026-10-03T14:23:00.607Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/golf/</loc>
+    <lastmod>2026-10-03T14:22:58.208Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -38,46 +78,6 @@
   <url>
     <loc>https://blufftongc.com/privacy/</loc>
     <lastmod>2026-10-03T13:37:21.545Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/book-tee-times/</loc>
-    <lastmod>2026-10-03T13:37:11.710Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/contact/</loc>
-    <lastmod>2026-10-03T13:36:49.721Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-10-03T13:36:40.064Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/rewards/</loc>
-    <lastmod>2026-10-03T13:36:26.945Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/membership/</loc>
-    <lastmod>2026-10-03T13:36:17.095Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/golf/</loc>
-    <lastmod>2026-10-03T13:36:07.579Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/lessons/</loc>
-    <lastmod>2026-10-03T13:33:42.485Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-03T13:28:55.200Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
