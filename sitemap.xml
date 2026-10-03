@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-03T13:04:26.614Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
+    <lastmod>2026-10-03T13:02:36.092Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
+    <lastmod>2026-10-03T13:02:35.041Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
+    <lastmod>2026-10-03T13:02:33.722Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/rewards/</loc>
     <lastmod>2026-10-03T12:51:34.725Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -41,11 +61,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/blog/public-golf-near-hilton-head/</loc>
-    <lastmod>2026-10-03T12:50:44.011Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://blufftongc.com/blog/lowcountry-golf-guide/</loc>
     <lastmod>2026-10-03T12:50:37.345Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -61,23 +76,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
-    <lastmod>2026-10-03T12:50:15.617Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
-    <lastmod>2026-10-03T12:50:08.657Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://blufftongc.com/blog/</loc>
     <lastmod>2026-10-03T12:50:01.929Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-03T12:49:55.652Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
