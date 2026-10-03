@@ -65,7 +65,7 @@ if (navToggle && navToggleLabel) {
     if (!node.hasAttribute || !node.hasAttribute(attr)) return;
     const raw = node.getAttribute(attr);
     if (!raw || raw.startsWith('mailto:') || raw.startsWith('tel:') || raw.startsWith('#')) return;
-    if (attr === 'href' && (raw.includes('/objects/') || raw.includes('/forms/') || raw.includes('members.blufftongc.com'))) return;
+    if (attr === 'href' && (raw.includes('/objects/') || raw.includes('/forms/') || raw.includes('members.eaglespointegc.com'))) return;
     const next = rewriteUrl(raw);
     if (next !== raw) node.setAttribute(attr, next);
   }
