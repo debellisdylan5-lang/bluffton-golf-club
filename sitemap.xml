@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-03T14:46:28.126Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/outings/</loc>
+    <lastmod>2026-10-03T14:46:22.294Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/membership/</loc>
+    <lastmod>2026-10-03T14:46:19.884Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/rewards/</loc>
     <lastmod>2026-10-03T14:42:06.621Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -8,16 +23,6 @@
   <url>
     <loc>https://blufftongc.com/privacy/</loc>
     <lastmod>2026-10-03T14:42:00.703Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/outings/</loc>
-    <lastmod>2026-10-03T14:41:54.416Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/membership/</loc>
-    <lastmod>2026-10-03T14:41:48.329Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/blog/</loc>
     <lastmod>2026-10-03T14:40:37.829Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-03T14:40:31.439Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
