@@ -445,3 +445,8 @@ body > .mobile-actions{display:none!important}
  .bgc-nav-v2__mobile-actions a:last-child{background:#d9a93b!important;border-color:#d9a93b!important}
 }
 #bgc-unified-shell,body>.nav,body>nav:not(#bgc-nav-v2),body>.site-header,body>header.site-header,body>header.topbar,body>.navbar,body>.bgc-canonical-nav,body>.bgc-main-nav,body>.mobile-panel,body>.mobile-nav,body>.mobile-menu-panel{display:none!important}
+
+@media(max-width:1100px){
+ #bgc-nav-v2 details.bgc-nav-v2__mobile{border:0!important;background:transparent!important;padding:0!important;margin:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;width:auto!important;height:auto!important;min-height:0!important}
+ #bgc-nav-v2 details.bgc-nav-v2__mobile>summary{box-sizing:border-box!important}
+}
