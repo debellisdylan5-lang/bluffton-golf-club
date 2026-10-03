@@ -19,6 +19,7 @@ tailwind.config = {
         }
       }
     }
+  ;
 
 (function () {
         if (!window.dataLayer || !Array.isArray(window.dataLayer)) return;
