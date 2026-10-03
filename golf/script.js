@@ -43,7 +43,7 @@ const b=document.querySelector('.menu'),m=document.getElementById('mobile-nav');
           const href = a.getAttribute('href');
           if (!href) return;
           if (href.startsWith('/objects/') || href.startsWith('/forms/') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
-          if (href.includes('members.blufftongc.com') || href.includes('golfscape') || href.includes('wallet') || href.includes('join')) return;
+          if (href.includes('members.eaglespointegc.com') || href.includes('golfscape') || href.includes('wallet') || href.includes('join')) return;
           const url = href.split('#')[0].split('?')[0];
           if (!exactMap.has(url)) return;
           if (location.hostname === 'paymegpt.com') return;
