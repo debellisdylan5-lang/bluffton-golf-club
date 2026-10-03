@@ -3,24 +3,6 @@ window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-MXRJCSN55F');
 
-tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            pine: '#071B3A',
-            charcoal: '#102447',
-            ivory: '#F7F6F2',
-            brass: '#C7A35B'
-          },
-          fontFamily: {
-            sans: ['Inter', 'Arial', 'sans-serif'],
-            serif: ['Cormorant Garamond', 'Georgia', 'serif']
-          }
-        }
-      }
-    };
-    void 0;
-
 !function () {
         if (!window.dataLayer || !Array.isArray(window.dataLayer)) return;
         const pushFooterEvent = (action, label) => {
