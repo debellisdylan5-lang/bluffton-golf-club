@@ -88,7 +88,7 @@ tailwind.config = {
           href.startsWith('/wallet/') ||
           href.startsWith('/join/') ||
           href.includes('golfscape') ||
-          href.includes('members.blufftongc.com')
+          href.includes('members.eaglespointegc.com')
         ) {
           return null;
         }
