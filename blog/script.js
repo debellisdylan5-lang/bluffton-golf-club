@@ -88,7 +88,7 @@ function gtag(){dataLayer.push(arguments);}
     if(!href) return false;
     if(href.startsWith('tel:') || href.startsWith('mailto:')) return false;
     if(href.includes('golfscape')) return false;
-    if(href === 'https://members.blufftongc.com') return false;
+    if(href === 'https://members.eaglespointegc.com') return false;
     if(/^https?:\/\/paymegpt\.com\/(objects|forms|wallet|join)\//.test(href)) return false;
     if(/^https?:\/\/[^/]+/.test(href) && !href.startsWith('https://paymegpt.com/')) return false;
     return Object.prototype.hasOwnProperty.call(LOCAL_ROUTES, href);
