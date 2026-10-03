@@ -97,7 +97,7 @@ if (window.AOS) {
               href.startsWith('/forms/') ||
               href.startsWith('mailto:') ||
               href.startsWith('tel:') ||
-              href.includes('members.eaglespointegc.com') ||
+              href.includes('members.blufftongc.com') ||
               href.includes('golfscape') ||
               /^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(href) && !href.startsWith('https://paymegpt.com/p/')
             ) {
