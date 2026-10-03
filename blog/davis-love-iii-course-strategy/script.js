@@ -106,7 +106,7 @@ tailwind.config = {
         const href = anchor.getAttribute('href') || '';
         if (!href) return true;
         if (/^(mailto:|tel:|sms:|javascript:|#)/i.test(href)) return true;
-        if (href.includes('/objects/') || href.includes('/forms/') || href.includes('members.eaglespointegc.com') || href.includes('golfscape') || href.includes('wallet') || href.includes('join')) return true;
+        if (href.includes('/objects/') || href.includes('/forms/') || href.includes('members.blufftongc.com') || href.includes('golfscape') || href.includes('wallet') || href.includes('join')) return true;
         return false;
       }
 
