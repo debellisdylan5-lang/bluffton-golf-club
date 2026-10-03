@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
+    <lastmod>2026-10-03T14:40:57.233Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
     <lastmod>2026-10-03T14:40:50.518Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/blog/golf-membership-in-bluffton-sc/</loc>
     <lastmod>2026-10-03T14:23:54.864Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
-    <lastmod>2026-10-03T14:23:48.437Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
