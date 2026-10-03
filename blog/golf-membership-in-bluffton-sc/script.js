@@ -138,7 +138,7 @@ tailwind.config = {
           href.indexOf('https://paymegpt.com/join/') === 0 ||
           href.indexOf('mailto:') === 0 ||
           href.indexOf('tel:') === 0 ||
-          href.indexOf('https://members.eaglespointegc.com') === 0 ||
+          href.indexOf('https://members.blufftongc.com/') === 0 ||
           href.indexOf('https://golfscape.com') === 0 ||
           href.indexOf('https://www.golfscape.com') === 0;
       }
