@@ -1,4 +1,9 @@
 window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MXRJCSN55F');
+
+window.dataLayer = window.dataLayer || [];
 function bgcTrack(eventName){ window.dataLayer.push({event:eventName}); }
 
 const navToggle = document.getElementById('nav-toggle');
@@ -65,7 +70,7 @@ if (navToggle && navToggleLabel) {
     if (!node.hasAttribute || !node.hasAttribute(attr)) return;
     const raw = node.getAttribute(attr);
     if (!raw || raw.startsWith('mailto:') || raw.startsWith('tel:') || raw.startsWith('#')) return;
-    if (attr === 'href' && (raw.includes('/objects/') || raw.includes('/forms/') || raw.includes('members.eaglespointegc.com'))) return;
+    if (attr === 'href' && (raw.includes('/objects/') || raw.includes('/forms/') || raw.includes('members.blufftongc.com'))) return;
     const next = rewriteUrl(raw);
     if (next !== raw) node.setAttribute(attr, next);
   }
