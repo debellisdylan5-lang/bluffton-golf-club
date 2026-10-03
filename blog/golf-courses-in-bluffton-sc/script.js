@@ -87,7 +87,7 @@ tailwind.config = {
           const href = a.getAttribute('href');
           if (!href) return;
           if (href.startsWith('https://paymegpt.com/objects/') || href.startsWith('https://paymegpt.com/forms/') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
-          if (href.includes('members.eaglespointegc.com') || href.includes('golfscape')) return;
+          if (href.includes('members.blufftongc.com') || href.includes('golfscape')) return;
 
           const newHref = rewriteUrl(href);
           if (newHref !== href) a.setAttribute('href', newHref);
