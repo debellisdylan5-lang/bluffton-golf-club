@@ -247,3 +247,31 @@ body > .mobile-actions{display:none!important}
  color:#17191a!important;
  transform:translateY(-1px)!important;
 }
+
+.hero .actions>a.bgc-membership-golf-cta{
+ box-sizing:border-box!important;
+ display:inline-flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ min-height:52px!important;
+ padding:0 22px!important;
+ border-radius:999px!important;
+ background:#fff!important;
+ background-color:#fff!important;
+ border:1px solid #fff!important;
+ color:#17191a!important;
+ text-decoration:none!important;
+ text-transform:uppercase!important;
+ letter-spacing:.12em!important;
+ font-size:10px!important;
+ font-weight:800!important;
+ white-space:nowrap!important;
+ box-shadow:0 10px 28px rgba(0,0,0,.10)!important;
+}
+@media(max-width:1024px){
+ .hero .actions>a.bgc-membership-golf-cta{width:100%!important;}
+}
+.hero .actions>a.bgc-membership-golf-cta:hover,
+.hero .actions>a.bgc-membership-golf-cta:focus{
+ background:#f7f4ed!important;background-color:#f7f4ed!important;border-color:#f7f4ed!important;color:#17191a!important;
+}
