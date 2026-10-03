@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/golf/</loc>
+    <lastmod>2026-10-03T04:02:11.091Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/contact/</loc>
     <lastmod>2026-10-03T04:02:03.591Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://blufftongc.com/membership/</loc>
     <lastmod>2026-10-03T03:59:32.694Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/golf/</loc>
-    <lastmod>2026-10-03T03:59:31.195Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
