@@ -1,0 +1,16 @@
+/* Subtle custom pattern and gold glow accents */
+    .bg-golf-pattern {
+      background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F3DEB3 0%, #C5A059 50%, #E7CF9B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #C5A059 0%, #B89248 100%);
+    }
+    .gold-border-glow {
+      box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+    }
