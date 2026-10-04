@@ -3,7 +3,12 @@
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXRJCSN55F"></script>
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MXRJCSN55F');
+</script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -25,19 +30,105 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function trackEvent(eventName){ window.dataLayer.push({event:eventName}); }
+  </script>
   <script type="application/ld+json">
     {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blufftongc.com/#organization","name":"Bluffton Golf Club","url":"https://blufftongc.com/","logo":"https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png","telephone":"+1-843-757-5900","address":{"@type":"PostalAddress","streetAddress":"1 Eagle Pointe Drive","addressLocality":"Bluffton","addressRegion":"SC","postalCode":"29909","addressCountry":"US"}},{"@type":"GolfCourse","@id":"https://blufftongc.com/#golfcourse","name":"Bluffton Golf Club","description":"Bluffton Golf Club is an 18-hole Davis Love III design in Bluffton, South Carolina, offering public golf near Hilton Head Island.","url":"https://blufftongc.com/","image":"https://paymegpt.com/objects/quick-uploads/1257/c7cd96a2df6ccad8.jpg","address":{"@type":"PostalAddress","streetAddress":"1 Eagle Pointe Drive","addressLocality":"Bluffton","addressRegion":"SC","postalCode":"29909","addressCountry":"US"},"telephone":"+1-843-757-5900","publicAccess":true,"provider":{"@id":"https://blufftongc.com/#organization"}},{"@type":"WebPage","@id":"https://blufftongc.com/golf#webpage","name":"Golf at Bluffton Golf Club","url":"https://blufftongc.com/golf","about":{"@id":"https://blufftongc.com/#golfcourse"},"publisher":{"@id":"https://blufftongc.com/#organization"},"primaryImageOfPage":"https://paymegpt.com/objects/quick-uploads/1257/90d9b54237ee53ca.jpg"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://blufftongc.com/"},{"@type":"ListItem","position":2,"name":"Golf","item":"https://blufftongc.com/golf"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Bluffton Golf Club open to the public?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bluffton Golf Club is a public golf course in Bluffton, South Carolina."}},{"@type":"Question","name":"Who designed Bluffton Golf Club?","acceptedAnswer":{"@type":"Answer","text":"Bluffton Golf Club is an 18-hole Davis Love III design."}},{"@type":"Question","name":"What is the par and yardage?","acceptedAnswer":{"@type":"Answer","text":"BGC is a par-71 course that plays 6,692 yards from the Champion (Gold) tees."}},{"@type":"Question","name":"How many tee sets are available?","acceptedAnswer":{"@type":"Answer","text":"BGC offers six tee options so golfers can choose a distance that fits their game."}},{"@type":"Question","name":"Does BGC have practice facilities?","acceptedAnswer":{"@type":"Answer","text":"Yes. Practice facilities include a driving range, pitching and chipping area, and putting green. Instruction is also available."}},{"@type":"Question","name":"How do I book a tee time?","acceptedAnswer":{"@type":"Answer","text":"Use the Book a Tee Time button to open Bluffton Golf Club’s live booking page, or call (843) 757-5900 for assistance."}}]}]}
   </script>
 
 <link data-bgc-page-style rel="stylesheet" href="/golf/styles.css">
 <!-- BGC_UNIFIED_SHELL_START -->
-
+<style id="bgc-unified-shell-style">
+/* Shared Bluffton Golf Club navigation and mobile actions */
+#bgc-unified-shell{position:sticky;top:0;z-index:2147480000;background:#f7f4ed;color:#17191a;border-bottom:1px solid rgba(23,25,26,.12);font-family:Arial,Helvetica,sans-serif}
+#bgc-unified-shell *{box-sizing:border-box}
+.bgc-unified-nav{width:min(1240px,92vw);min-height:80px;margin:0 auto;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:22px;align-items:center}
+.bgc-unified-logo{display:block;line-height:0}.bgc-unified-logo img{display:block;width:auto;height:54px;max-width:158px;object-fit:contain}
+.bgc-unified-links{display:flex;justify-content:center;align-items:center;gap:18px;min-width:0}.bgc-unified-links a,.bgc-unified-actions a{text-decoration:none;color:#17191a;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;white-space:nowrap}
+.bgc-unified-links a:hover,.bgc-unified-links a[aria-current="page"]{color:#b58722}
+.bgc-unified-actions{display:flex;gap:10px;align-items:center}.bgc-unified-actions a{min-height:44px;padding:0 16px;border:1px solid rgba(23,25,26,.2);border-radius:999px;display:inline-flex;align-items:center;justify-content:center}.bgc-unified-actions a:last-child{background:#d9a93b;border-color:#d9a93b}
+.bgc-unified-toggle{display:none;width:48px;height:48px;border:1px solid rgba(23,25,26,.18);border-radius:14px;background:#fff;color:#17191a;font-size:25px;line-height:1;align-items:center;justify-content:center}
+.bgc-unified-mobile-menu{display:none;border-top:1px solid rgba(23,25,26,.12);background:#f7f4ed;padding:16px 4vw 22px}.bgc-unified-mobile-menu.is-open{display:block}.bgc-unified-mobile-menu a{display:block;padding:15px 0;border-bottom:1px solid rgba(23,25,26,.1);text-decoration:none;color:#17191a;text-transform:uppercase;letter-spacing:.12em;font:800 13px Arial,Helvetica,sans-serif}.bgc-unified-mobile-menu a[aria-current="page"]{color:#b58722}.bgc-unified-mobile-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:16px}.bgc-unified-mobile-actions a{display:flex;min-height:48px;align-items:center;justify-content:center;border-radius:999px;border:1px solid rgba(23,25,26,.2);text-decoration:none;color:#17191a;text-transform:uppercase;letter-spacing:.1em;font:800 11px Arial,Helvetica,sans-serif}.bgc-unified-mobile-actions a:last-child{background:#d9a93b;border-color:#d9a93b}
+@media(max-width:1100px){.bgc-unified-nav{min-height:74px;grid-template-columns:auto auto;justify-content:space-between}.bgc-unified-links,.bgc-unified-actions{display:none}.bgc-unified-toggle{display:flex}}
+@media(max-width:480px){.bgc-unified-nav{width:calc(100% - 32px)}.bgc-unified-logo img{height:44px;max-width:132px}}
+@media(max-width:1100px){.mobilebar,.mobile-sticky,.sticky-mobile-actions,.mobile-sticky-cta,.mobile-utility-bar,.sticky-bar,.mobile-actions{display:none!important}body{padding-bottom:0!important}}
+</style>
 <!-- BGC_UNIFIED_SHELL_END -->
+<style id="bgc-static-nav-fix">
+#bgc-unified-shell .bgc-unified-mobile-details{display:none}
+@media(max-width:1100px){#bgc-unified-shell .bgc-unified-mobile-details{display:block;position:relative}#bgc-unified-shell .bgc-unified-mobile-details summary{list-style:none;width:48px;height:48px;border:1px solid rgba(23,25,26,.18);border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font:25px/1 Arial,sans-serif}#bgc-unified-shell .bgc-unified-mobile-details summary::-webkit-details-marker{display:none}#bgc-unified-shell .bgc-unified-mobile-menu{position:fixed;left:0;right:0;top:74px;max-height:calc(100svh - 74px);overflow:auto;box-shadow:0 18px 35px rgba(10,20,30,.15)}#bgc-unified-shell .bgc-unified-mobile-details:not([open]) .bgc-unified-mobile-menu{display:none!important}}
 
+/* BGC site-wide mobile consistency patch */
+nav[data-section="navbar"], header.site-header, header.topbar, .bgc-canonical-nav, .bgc-main-nav{display:none!important}
+html,body{max-width:100%;overflow-x:hidden!important}
+@media(max-width:1100px){.mobilebar,.mobile-sticky,.sticky-mobile-actions,.mobile-sticky-cta,.mobile-utility-bar,.sticky-bar,.mobile-actions{display:none!important}body{padding-bottom:0!important}}
+@media(max-width:720px){.photo-grid,.grid2,.lists,.media-split,.facts{grid-template-columns:1fr!important}}
+</style>
 <!-- BGC_NAV_NORMALIZATION_OCT3 -->
-
-<!-- BGC_NAV_V2_CSS_START --><!-- BGC_NAV_V2_CSS_END -->
+<style id="bgc-navigation-normalization-oct3">
+/* One navigation system across the entire Bluffton Golf Club site. */
+#bgc-unified-shell{display:block!important;position:sticky!important;top:0!important;z-index:2147480000!important}
+body > .nav,
+body > nav:not(#bgc-unified-shell),
+body > .site-header,
+body > header.site-header,
+body > header.topbar,
+body > .navbar,
+body > .bgc-canonical-nav,
+body > .bgc-main-nav,
+body > .mobile-panel,
+body > .mobile-nav,
+body > .mobile-menu-panel,
+body > .mobilebar,
+body > .mobile-sticky,
+body > .sticky-mobile-actions,
+body > .mobile-sticky-cta,
+body > .mobile-utility-bar,
+body > .sticky-bar,
+body > .mobile-actions{display:none!important}
+#bgc-unified-shell .bgc-unified-mobile-details{display:none}
+@media (max-width:1100px){
+  body{padding-bottom:0!important}
+  #bgc-unified-shell .bgc-unified-nav{min-height:74px!important;width:calc(100% - 32px)!important;grid-template-columns:auto auto!important;justify-content:space-between!important}
+  #bgc-unified-shell .bgc-unified-links,
+  #bgc-unified-shell .bgc-unified-actions{display:none!important}
+  #bgc-unified-shell .bgc-unified-mobile-details{display:block!important;position:relative}
+  #bgc-unified-shell .bgc-unified-mobile-details summary{list-style:none;width:48px;height:48px;border:1px solid rgba(23,25,26,.18);border-radius:999px;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font:25px/1 Arial,sans-serif}
+  #bgc-unified-shell .bgc-unified-mobile-details summary::-webkit-details-marker{display:none}
+  #bgc-unified-shell .bgc-unified-mobile-menu{position:fixed!important;left:0;right:0;top:74px;max-height:calc(100svh - 74px);overflow:auto;background:#f7f4ed;box-shadow:0 18px 35px rgba(10,20,30,.15)}
+  #bgc-unified-shell .bgc-unified-mobile-details:not([open]) .bgc-unified-mobile-menu{display:none!important}
+}
+@media (max-width:480px){
+  #bgc-unified-shell .bgc-unified-logo img{height:44px!important;max-width:132px!important}
+}
+</style>
+<!-- BGC_NAV_V2_CSS_START --><style id="bgc-nav-v2-css">
+#bgc-nav-v2{display:block!important;position:sticky!important;top:0!important;z-index:2147483000!important;background:#f7f4ed!important;border-bottom:1px solid rgba(23,25,26,.12)!important;font-family:Arial,Helvetica,sans-serif!important}
+#bgc-nav-v2 *{box-sizing:border-box!important}
+.bgc-nav-v2__bar{width:min(1240px,92vw)!important;min-height:80px!important;margin:0 auto!important;display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;gap:22px!important;align-items:center!important}
+.bgc-nav-v2__logo{display:block!important;line-height:0!important}.bgc-nav-v2__logo img{display:block!important;width:auto!important;height:54px!important;max-width:158px!important;object-fit:contain!important}
+.bgc-nav-v2__desktop{display:flex!important;justify-content:center!important;align-items:center!important;gap:18px!important}.bgc-nav-v2__desktop a,.bgc-nav-v2__actions a{color:#17191a!important;text-decoration:none!important;text-transform:uppercase!important;letter-spacing:.12em!important;font-size:11px!important;font-weight:800!important;white-space:nowrap!important}.bgc-nav-v2__desktop a[aria-current="page"]{color:#b58722!important}
+.bgc-nav-v2__actions{display:flex!important;gap:10px!important}.bgc-nav-v2__actions a{min-height:44px!important;padding:0 16px!important;border:1px solid rgba(23,25,26,.2)!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important}.bgc-nav-v2__actions a:last-child{background:#d9a93b!important;border-color:#d9a93b!important}
+.bgc-nav-v2__mobile{display:none!important}
+@media(max-width:1100px){
+ .bgc-nav-v2__bar{width:calc(100% - 32px)!important;min-height:74px!important;grid-template-columns:auto auto!important;justify-content:space-between!important}
+ .bgc-nav-v2__logo img{height:44px!important;max-width:132px!important}
+ .bgc-nav-v2__desktop,.bgc-nav-v2__actions{display:none!important}
+ .bgc-nav-v2__mobile{display:block!important;position:relative!important}
+ .bgc-nav-v2__mobile>summary{display:flex!important;align-items:center!important;justify-content:center!important;width:48px!important;height:48px!important;margin:0!important;padding:0!important;border:1px solid rgba(23,25,26,.18)!important;border-radius:14px!important;background:#fff!important;color:#163a67!important;cursor:pointer!important;list-style:none!important;font:25px/1 Arial,sans-serif!important}
+ .bgc-nav-v2__mobile>summary::-webkit-details-marker{display:none!important}
+ .bgc-nav-v2__drawer{display:none!important;position:fixed!important;left:0!important;right:0!important;top:74px!important;max-height:calc(100svh - 74px)!important;overflow:auto!important;background:#f7f4ed!important;border-top:1px solid rgba(23,25,26,.12)!important;padding:16px 4vw 22px!important;box-shadow:0 18px 35px rgba(10,20,30,.15)!important;z-index:2147483001!important}
+ .bgc-nav-v2__mobile[open]>.bgc-nav-v2__drawer{display:block!important}
+ .bgc-nav-v2__drawer nav a{display:block!important;padding:15px 0!important;border-bottom:1px solid rgba(23,25,26,.1)!important;color:#17191a!important;text-decoration:none!important;text-transform:uppercase!important;letter-spacing:.12em!important;font:800 13px Arial,Helvetica,sans-serif!important}
+ .bgc-nav-v2__drawer nav a[aria-current="page"]{color:#b58722!important}
+ .bgc-nav-v2__mobile-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;padding-top:16px!important}
+ .bgc-nav-v2__mobile-actions a{display:flex!important;min-height:48px!important;align-items:center!important;justify-content:center!important;border-radius:999px!important;border:1px solid rgba(23,25,26,.2)!important;color:#17191a!important;text-decoration:none!important;text-transform:uppercase!important;letter-spacing:.1em!important;font:800 11px Arial,Helvetica,sans-serif!important}
+ .bgc-nav-v2__mobile-actions a:last-child{background:#d9a93b!important;border-color:#d9a93b!important}
+}
+#bgc-unified-shell,body>.nav,body>nav:not(#bgc-nav-v2),body>.site-header,body>header.site-header,body>header.topbar,body>.navbar,body>.bgc-canonical-nav,body>.bgc-main-nav,body>.mobile-panel,body>.mobile-nav,body>.mobile-menu-panel{display:none!important}
+</style><!-- BGC_NAV_V2_CSS_END -->
 
 <!-- SEO Meta Tags -->
 <title>Golf at Bluffton Golf Club | Davis Love III Design</title>
@@ -341,7 +432,8 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body><!-- BGC_NAV_V2_START --><header id="bgc-nav-v2"><div class="bgc-nav-v2__bar"><a class="bgc-nav-v2__logo" href="https://blufftongc.com/" aria-label="Bluffton Golf Club home"><img src="https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png" alt="Bluffton Golf Club"></a><nav class="bgc-nav-v2__desktop" aria-label="Main navigation"><a href="https://blufftongc.com/golf" aria-current="page">Golf</a><a href="https://blufftongc.com/membership">Membership</a><a href="https://blufftongc.com/lessons">Lessons</a><a href="https://blufftongc.com/outings">Outings</a><a href="https://blufftongc.com/blog">Blog</a><a href="https://blufftongc.com/contact">Contact</a></nav><div class="bgc-nav-v2__actions"><a href="https://members.blufftongc.com/">Member Login</a><a href="https://blufftongc.com/book-tee-times/">Book a Tee Time</a></div><details class="bgc-nav-v2__mobile"><summary aria-label="Open navigation menu"><span aria-hidden="true">☰</span></summary><div class="bgc-nav-v2__drawer"><nav aria-label="Mobile navigation"><a href="https://blufftongc.com/golf" aria-current="page">Golf</a><a href="https://blufftongc.com/membership">Membership</a><a href="https://blufftongc.com/lessons">Lessons</a><a href="https://blufftongc.com/outings">Outings</a><a href="https://blufftongc.com/blog">Blog</a><a href="https://blufftongc.com/contact">Contact</a></nav><div class="bgc-nav-v2__mobile-actions"><a href="https://members.blufftongc.com/">Member Login</a><a href="https://blufftongc.com/book-tee-times/">Book a Tee Time</a></div></div></details></div></header><!-- BGC_NAV_V2_END --><!-- BGC_STATIC_NAV_START --><div id="bgc-unified-shell"><div class="bgc-unified-nav"><a class="bgc-unified-logo" href="https://blufftongc.com/" aria-label="Bluffton Golf Club home"><img src="https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png" alt="Bluffton Golf Club"></a><div class="bgc-unified-links"><a href="https://blufftongc.com/golf" aria-current="page">Golf</a><a href="https://blufftongc.com/membership">Membership</a><a href="https://blufftongc.com/lessons">Lessons</a><a href="https://blufftongc.com/outings">Outings</a><a href="https://blufftongc.com/blog">Blog</a><a href="https://blufftongc.com/contact">Contact</a></div><div class="bgc-unified-actions"><a href="https://members.blufftongc.com/">Member Login</a><a href="https://blufftongc.com/book-tee-times/">Book a Tee Time</a></div><details class="bgc-unified-mobile-details"><summary aria-label="Open navigation"><span>☰</span></summary><div class="bgc-unified-mobile-menu"><a href="https://blufftongc.com/golf" aria-current="page">Golf</a><a href="https://blufftongc.com/membership">Membership</a><a href="https://blufftongc.com/lessons">Lessons</a><a href="https://blufftongc.com/outings">Outings</a><a href="https://blufftongc.com/blog">Blog</a><a href="https://blufftongc.com/contact">Contact</a><div class="bgc-unified-mobile-actions"><a href="https://members.blufftongc.com/">Member Login</a><a href="https://blufftongc.com/book-tee-times/">Book a Tee Time</a></div></div></details></div></div><!-- BGC_STATIC_NAV_END -->
   <header class="site-header" data-section="navbar">
@@ -699,10 +791,84 @@
   </div>
 
 
-  
-  
+  <script>
+    const b=document.querySelector('.menu'),m=document.getElementById('mobile-nav');
+    const setMenuState=(open)=>{b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Close navigation':'Toggle navigation');m.hidden=!open};
+    const closeMenu=()=>setMenuState(false);
+    b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';setMenuState(!o)});
+    m.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape') closeMenu()});
+  </script>
+  <script>
+    (() => {
+      const exactMap = new Map([
+        ['https://blufftongc.com/', '/'],
+        ['https://blufftongc.com/golf', '/golf/'],
+        ['https://blufftongc.com/membership', '/membership/'],
+        ['https://blufftongc.com/lessons', '/lessons/'],
+        ['https://blufftongc.com/outings', '/outings/'],
+        ['https://blufftongc.com/blog', '/blog/'],
+        ['https://blufftongc.com/contact', '/contact/'],
+        ['https://blufftongc.com/book-tee-times', '/book-tee-times/'],
+        ['https://blufftongc.com/privacy', '/privacy/'],
+        ['https://blufftongc.com/rewards', '/rewards/'],
+        ['https://blufftongc.com/blog/public-golf-near-hilton-head', '/blog/public-golf-near-hilton-head/'],
+        ['https://blufftongc.com/blog/golf-courses-in-bluffton-sc', '/blog/golf-courses-in-bluffton-sc/'],
+        ['https://blufftongc.com/blog/davis-love-iii-course-strategy', '/blog/davis-love-iii-course-strategy/'],
+        ['https://blufftongc.com/blog/golf-lessons-in-bluffton-sc', '/blog/golf-lessons-in-bluffton-sc/'],
+        ['https://blufftongc.com/blog/lowcountry-golf-guide', '/blog/lowcountry-golf-guide/'],
+        ['https://blufftongc.com/blog/golf-membership-in-bluffton-sc', '/blog/golf-membership-in-bluffton-sc/']
+      ]);
+
+      const basePrefix = location.hostname === 'paymegpt.com'
+        ? ''
+        : location.hostname.endsWith('github.io')
+          ? '/bluffton-golf-club'
+          : '';
+
+      const buildUrl = (path) => basePrefix + path;
+
+      const rewriteNode = (node) => {
+        if (!node || node.nodeType !== 1) return;
+        const anchors = node.matches && node.matches('a[href]') ? [node] : Array.from(node.querySelectorAll ? node.querySelectorAll('a[href]') : []);
+        anchors.forEach((a) => {
+          const href = a.getAttribute('href');
+          if (!href) return;
+          if (href.startsWith('/objects/') || href.startsWith('/forms/') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+          if (href.includes('members.blufftongc.com') || href.includes('golfscape') || href.includes('wallet') || href.includes('join')) return;
+          const url = href.split('#')[0].split('?')[0];
+          if (!exactMap.has(url)) return;
+          if (location.hostname === 'paymegpt.com') return;
+          const suffix = href.slice(url.length);
+          a.setAttribute('href', buildUrl(exactMap.get(url)) + suffix);
+        });
+
+        const dataNodes = node.matches && node.matches('[data-article-url]') ? [node] : Array.from(node.querySelectorAll ? node.querySelectorAll('[data-article-url]') : []);
+        dataNodes.forEach((el) => {
+          const val = el.getAttribute('data-article-url');
+          if (!val) return;
+          const url = val.split('#')[0].split('?')[0];
+          if (!exactMap.has(url)) return;
+          if (location.hostname === 'paymegpt.com') return;
+          const suffix = val.slice(url.length);
+          el.setAttribute('data-article-url', buildUrl(exactMap.get(url)) + suffix);
+        });
+      };
+
+      const rewriteAll = () => rewriteNode(document.body);
+
+      rewriteAll();
+
+      const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          mutation.addedNodes.forEach(rewriteNode);
+        }
+      });
+
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
 
 
-  <script src="script.js"></script>
 </body>
 </html>
