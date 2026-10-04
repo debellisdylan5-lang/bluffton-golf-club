@@ -9,10 +9,10 @@
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Playfair Display (Luxury Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Inter (Clean Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- AOS Scroll Animations CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -22,21 +22,22 @@
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
           },
           colors: {
             bgc: {
-              navy: '#0B1B36',
-              navyDark: '#071224',
-              navyLight: '#14294E',
-              gold: '#C5A059',
-              goldLight: '#DFC085',
-              goldDark: '#9E7E3C',
-              ivory: '#FAF8F5',
-              ivoryDark: '#EFECE6',
-              cream: '#F4EFE6',
-              muted: '#8A99AD'
+              navy: '#123A6F',
+              navyDark: '#0F2E57',
+              navyLight: '#2B568C',
+              gold: '#D9A93B',
+              goldLight: '#E6BF63',
+              goldDark: '#C8A44D',
+              ivory: '#F7F4ED',
+              ivoryDark: '#F5F1E8',
+              cream: '#F5F1E8',
+              muted: '#6C7480',
+              charcoal: '#17191A'
             }
           }
         }
@@ -404,15 +405,15 @@
 </script>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans bg-bgc-navy text-slate-100 antialiased selection:bg-bgc-gold selection:text-bgc-navyDark min-h-screen flex flex-col">
+<body class="font-sans bg-bgc-ivory text-bgc-charcoal antialiased selection:bg-bgc-gold selection:text-bgc-navyDark min-h-screen flex flex-col">
 
   <!-- ============================================================================ -->
   <!-- TOP URGENCY TICKER: Scarcity Callout Bar                                      -->
   <!-- ============================================================================ -->
-  <div data-section="urgency-banner" class="bg-gradient-to-r from-bgc-goldDark via-bgc-gold to-bgc-goldLight text-bgc-navyDark px-4 py-2 text-center text-xs sm:text-sm font-semibold tracking-wide border-b border-bgc-gold/30">
+  <div data-section="urgency-banner" class="bg-gradient-to-r from-bgc-navyDark via-bgc-navy to-bgc-gold text-white px-4 py-2 text-center text-xs sm:text-sm font-semibold tracking-wide border-b border-bgc-gold/30">
     <div class="max-w-5xl mx-auto flex items-center justify-center gap-2">
-      <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
-      <span>Strictly Limited: <strong>First 20 Golfers Only</strong> • $199 For The Rest of 2026</span>
+      <span class="inline-block w-2 h-2 rounded-full bg-bgc-gold animate-pulse"></span>
+      <span>Strictly Limited: <strong>First 20 People Only</strong> • $199 For The Rest of 2026</span>
     </div>
   </div>
 
@@ -420,23 +421,17 @@
   <!-- COMPACT HEADER: Minimal Campaign Navigation                                  -->
   <!-- Notes: Kept focused without full menu to maximize campaign conversion         -->
   <!-- ============================================================================ -->
-  <header data-section="navbar" class="border-b border-white/10 bg-bgc-navyDark/90 backdrop-blur-md sticky top-0 z-40">
+  <header data-section="navbar" class="border-b border-bgc-gold/20 bg-bgc-ivory/95 backdrop-blur-md sticky top-0 z-40">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand & Club Title -->
       <a href="https://blufftongc.com/membership" class="group flex items-center gap-3" title="Bluffton Golf Club">
-        <div class="w-10 h-10 rounded-full border border-bgc-gold/50 flex items-center justify-center bg-bgc-navyLight/70 text-bgc-gold font-serif font-bold text-lg shadow-inner group-hover:border-bgc-gold transition-colors">
-          B
-        </div>
-        <div class="flex flex-col">
-          <span class="font-serif font-bold tracking-wider text-base sm:text-lg text-white uppercase group-hover:text-bgc-gold transition-colors">Bluffton Golf Club</span>
-          <span class="text-[11px] uppercase tracking-widest text-bgc-gold font-medium">The Course Bluffton Calls Home</span>
-        </div>
+        <img src="/objects/quick-uploads/1257/320add9e72666f17.jpg" alt="Bluffton Golf Club" class="h-12 sm:h-14 w-auto object-contain">
       </a>
 
       <!-- Quick Action / Back Link -->
       <div class="flex items-center gap-3 sm:gap-4">
-        <a href="https://blufftongc.com/membership" class="hidden sm:inline-flex items-center text-xs tracking-wider uppercase text-slate-300 hover:text-bgc-gold transition-colors font-medium">
+        <a href="https://blufftongc.com/membership" class="hidden sm:inline-flex items-center text-xs tracking-wider uppercase text-bgc-charcoal hover:text-bgc-navy transition-colors font-medium">
           <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
           Club Memberships
         </a>
@@ -452,7 +447,7 @@
     <!-- ============================================================================ -->
     <!-- HERO SECTION: Primary Hook, Value Proposition & Official Creative Visual    -->
     <!-- ============================================================================ -->
-    <section data-section="hero" class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-bg-golf-pattern">
+    <section data-section="hero" class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-bgc-ivory bg-golf-pattern">
       <!-- Ambient Backlight -->
       <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-bgc-gold/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -463,51 +458,51 @@
           <!-- Left Column: Copy & Value -->
           <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-bgc-gold/40 bg-bgc-gold/10 text-bgc-gold text-xs sm:text-sm font-medium tracking-wide">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-bgc-gold/40 bg-white/80 text-bgc-navy text-xs sm:text-sm font-medium tracking-wide shadow-sm">
               <span class="w-1.5 h-1.5 rounded-full bg-bgc-gold"></span>
               Official 2026 Local Golfers Special
             </div>
 
-            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-bgc-navyDark leading-tight">
               Practice & Play <br class="hidden sm:inline">
               <span class="gold-gradient-text">Membership</span>
             </h1>
 
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Bluffton’s Home Course is welcoming just <strong class="text-white">20 dedicated golfers</strong> into our exclusive Practice + Play program. Enjoy unlimited range practice, discounted afternoon rounds, pro shop savings, and professional instruction through the end of 2026.
+            <p class="text-base sm:text-lg text-bgc-charcoal/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Bluffton’s Home Course is welcoming just <strong class="text-bgc-navyDark">20 dedicated golfers</strong> into our exclusive Practice + Play program. Enjoy unlimited range practice, discounted afternoon rounds, pro shop savings, and professional instruction through the end of 2026.
             </p>
 
             <!-- Price Highlight Box -->
-            <div class="p-5 sm:p-6 rounded-xl bg-gradient-to-br from-bgc-navyLight/90 to-bgc-navy/80 border border-bgc-gold/30 shadow-xl max-w-lg mx-auto lg:mx-0">
+            <div class="p-5 sm:p-6 rounded-xl bg-white border border-bgc-gold/25 shadow-lg max-w-lg mx-auto lg:mx-0">
               <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                  <span class="block text-xs uppercase tracking-widest text-slate-400 font-semibold">Special Campaign Fee</span>
+                  <span class="block text-xs uppercase tracking-widest text-bgc-muted font-semibold">Special Campaign Fee</span>
                   <div class="flex items-baseline gap-2">
-                    <span class="text-4xl sm:text-5xl font-serif font-bold text-white">$199</span>
-                    <span class="text-sm sm:text-base text-bgc-gold font-medium">for the rest of 2026</span>
+                    <span class="text-4xl sm:text-5xl font-serif font-bold text-bgc-navyDark">$199</span>
+                    <span class="text-sm sm:text-base text-bgc-goldDark font-medium">for the rest of 2026</span>
                   </div>
                 </div>
-                <div class="sm:border-l sm:border-white/10 sm:pl-5 text-center sm:text-left">
-                  <span class="inline-block px-2.5 py-1 rounded bg-red-500/20 text-red-300 border border-red-500/30 text-xs font-semibold uppercase tracking-wider">
-                    Only 20 Available
+                <div class="sm:border-l sm:border-bgc-navy/10 sm:pl-5 text-center sm:text-left">
+                  <span class="inline-block px-2.5 py-1 rounded bg-bgc-navy/10 text-bgc-navyDark border border-bgc-navy/20 text-xs font-semibold uppercase tracking-wider">
+                    First 20 People Only
                   </span>
-                  <p class="text-[11px] text-slate-400 mt-1">Non-transferable • Local community offer</p>
+                  <p class="text-[11px] text-bgc-muted mt-1">Non-transferable • Local community offer</p>
                 </div>
               </div>
             </div>
 
             <!-- Primary CTAs -->
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-              <a href="#claim-spot" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-bgc-gold to-bgc-goldLight text-bgc-navyDark font-bold text-base tracking-wide uppercase hover:shadow-lg hover:shadow-bgc-gold/20 hover:scale-[1.02] active:scale-[0.98] transition-all text-center">
+              <a href="#claim-spot" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-bgc-gold to-bgc-goldDark text-white font-bold text-base tracking-wide uppercase hover:shadow-lg hover:shadow-bgc-gold/20 hover:scale-[1.02] active:scale-[0.98] transition-all text-center">
                 Claim Your Spot (1 of 20)
               </a>
-              <a href="#included-perks" class="w-full sm:w-auto px-6 py-4 rounded-lg border border-white/20 text-slate-200 hover:text-white hover:border-bgc-gold/60 text-sm font-medium tracking-wide text-center transition-colors">
+              <a href="#included-perks" class="w-full sm:w-auto px-6 py-4 rounded-lg border border-bgc-navy/20 text-bgc-navyDark hover:text-bgc-navy hover:border-bgc-gold/60 text-sm font-medium tracking-wide text-center transition-colors bg-white/50">
                 View Member Perks ↓
               </a>
             </div>
 
             <!-- Reassurance Note -->
-            <p class="text-xs text-slate-400 italic">
+            <p class="text-xs text-bgc-muted italic">
               *Submitting your request holds your place in line. Our team will contact you personally to confirm availability.
             </p>
 
@@ -517,16 +512,16 @@
           <div class="lg:col-span-5 flex justify-center" data-aos="fade-left">
             <div class="relative w-full max-w-md group">
               <!-- Glow Effect -->
-              <div class="absolute -inset-1.5 bg-gradient-to-r from-bgc-gold to-amber-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-bgc-gold to-amber-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-35 transition duration-500"></div>
               
               <!-- Frame & Official Visual -->
-              <div class="relative rounded-2xl overflow-hidden border-2 border-bgc-gold/40 bg-bgc-navyDark shadow-2xl">
-                <div class="bg-bgc-navyDark px-4 py-2.5 border-b border-white/10 flex items-center justify-between text-xs text-slate-300">
-                  <span class="flex items-center gap-1.5 font-semibold text-bgc-gold">
-                    <svg class="w-4 h-4 text-bgc-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <div class="relative rounded-2xl overflow-hidden border-2 border-bgc-gold/35 bg-white shadow-2xl">
+                <div class="bg-bgc-ivory px-4 py-2.5 border-b border-bgc-navy/10 flex items-center justify-between text-xs text-bgc-charcoal">
+                  <span class="flex items-center gap-1.5 font-semibold text-bgc-navyDark">
+                    <svg class="w-4 h-4 text-bgc-goldDark" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     Official Club Announcement
                   </span>
-                  <span class="text-[11px] text-slate-400">Bluffton, SC</span>
+                  <span class="text-[11px] text-bgc-muted">Bluffton, SC</span>
                 </div>
                 
                 <img 
@@ -536,8 +531,8 @@
                   loading="eager"
                 >
 
-                <div class="p-4 bg-bgc-navyDark/95 border-t border-white/10 text-center">
-                  <p class="text-xs text-bgc-gold font-serif italic">“The Course Bluffton Calls Home”</p>
+                <div class="p-4 bg-bgc-ivory border-t border-bgc-navy/10 text-center">
+                  <p class="text-xs text-bgc-goldDark font-serif italic">“The Course Bluffton Calls Home”</p>
                 </div>
               </div>
             </div>
@@ -551,16 +546,16 @@
     <!-- ============================================================================ -->
     <!-- PERKS BREAKDOWN: Exact Offer Details Listed Clearly                          -->
     <!-- ============================================================================ -->
-    <section id="included-perks" data-section="features" class="py-16 md:py-24 bg-bgc-navyDark border-y border-white/10 relative">
+    <section id="included-perks" data-section="features" class="py-16 md:py-24 bg-bgc-ivory border-y border-bgc-navy/10 relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-14">
-          <span class="text-xs uppercase tracking-widest text-bgc-gold font-bold">Unbeatable Value</span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+          <span class="text-xs uppercase tracking-widest text-bgc-goldDark font-bold">Unbeatable Value</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bgc-navyDark mt-2">
             What’s Included in Your Membership
           </h2>
           <div class="w-16 h-0.5 bg-bgc-gold mx-auto my-4"></div>
-          <p class="text-slate-300 text-sm sm:text-base">
+          <p class="text-bgc-charcoal/75 text-sm sm:text-base">
             Every perk is designed to help you dial in your swing and play more golf on Bluffton's favorite fairways for one simple upfront fee.
           </p>
         </div>
@@ -569,7 +564,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <!-- Perk 1 -->
-          <div class="p-6 rounded-xl bg-bgc-navy/70 border border-white/10 hover:border-bgc-gold/50 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-6 rounded-xl bg-white border border-bgc-navy/10 hover:border-bgc-gold/50 transition-all duration-300 shadow-sm" data-aos="fade-up" data-aos-delay="100">
             <div class="w-12 h-12 rounded-lg bg-bgc-gold/15 border border-bgc-gold/30 flex items-center justify-center text-bgc-gold mb-4">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke-width="2"/><path stroke-width="2" d="M12 3v3m0 12v3M3 12h3m12 0h3"/></svg>
             </div>
