@@ -61,11 +61,7 @@
       font-size: .72rem;
       font-weight: 800;
     }
-    .coupon-frame {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)),
-        #0c2745;
-    }
+
     .step-badge {
       width: 2rem;
       height: 2rem;
