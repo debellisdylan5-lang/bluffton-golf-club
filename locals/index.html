@@ -11,10 +11,9 @@
   
   
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
 
 <!-- SEO Meta Tags -->
@@ -318,200 +317,190 @@
 </script>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="overflow-x-hidden bg-white antialiased">
-  <!-- ============================================================================ -->
-  <!-- NAVBAR: Compact campaign navigation with the official BGC logo                -->
-  <!-- ============================================================================ -->
-  <header data-section="navbar" class="bg-white">
-    <div class="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-12">
-      <a href="#top" aria-label="Bluffton Golf Club Local Appreciation Week">
-        <img src="https://paymegpt.com/objects/quick-uploads/1257/320add9e72666f17.jpg" alt="Bluffton Golf Club logo" class="h-14 w-auto max-w-[190px] object-contain sm:h-16">
-      </a>
-      <a href="#claim" class="rounded-sm bg-[#16375C] px-4 py-3 text-center text-[11px] font-bold uppercase tracking-[.13em] text-white transition hover:bg-[#0C2745] sm:px-6 sm:text-xs">
-        Claim Coupon
-      </a>
-    </div>
-  </header>
-
+<body class="overflow-x-hidden antialiased">
   <main>
-    <section id="top" data-section="hero" class="relative isolate overflow-hidden bg-[#0c2745]">
-      <div class="hero-panel absolute inset-0 opacity-100"></div>
-      <div class="mx-auto grid max-w-7xl gap-12 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:px-12 lg:py-16">
-        <div class="relative z-10 text-white" data-aos="fade-up">
-          <p class="text-xs font-bold uppercase tracking-[.3em] text-[#E2C66F]">Local Appreciation Week</p>
-          <h1 class="mt-5 max-w-3xl text-5xl font-semibold leading-[.92] tracking-[-.03em] sm:text-6xl md:text-7xl lg:text-[5.7rem]">
+    <section id="top" class="hero-bg relative isolate overflow-hidden">
+      <div class="absolute inset-0 panel-glow opacity-100"></div>
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-[1.02fr_.98fr] lg:items-center lg:px-12 lg:py-14">
+        <div class="relative z-10 text-white">
+          <div class="mb-6 inline-flex items-center gap-3 rounded-full trust-pill px-4 py-2 text-[11px] font-bold uppercase tracking-[.22em] text-white/85">
+            <img src="https://paymegpt.com/objects/quick-uploads/1257/320add9e72666f17.jpg" alt="Bluffton Golf Club logo" class="h-6 w-auto rounded-sm bg-white/95 p-0.5 object-contain">
+            <span>Local Appreciation Week</span>
+          </div>
+
+          <p class="section-kicker text-[#E2C66F]">Bluffton locals only</p>
+          <h1 class="mt-4 max-w-3xl text-6xl font-semibold leading-[.9] tracking-[-.05em] sm:text-7xl lg:text-[6.4rem]">
             Bluffton,<br>This One’s For You.
           </h1>
-          <p class="mt-6 max-w-2xl text-base leading-8 text-white/88 sm:text-lg">
-            Bluffton’s Home Course is giving back to the people who call this community home. Enjoy <span class="font-semibold text-[#E2C66F]">20% off</span> during <span class="font-semibold text-[#E2C66F]">October 6–13</span> with valid local ID.
+
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <div class="rounded-full bg-white px-4 py-2 text-sm font-extrabold uppercase tracking-[.18em] text-[#16375C]">
+              20% OFF
+            </div>
+            <div class="rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-bold uppercase tracking-[.18em] text-white/90">
+              Oct 6–13
+            </div>
+          </div>
+
+          <p class="mt-6 max-w-2xl text-base leading-8 text-white/84 sm:text-lg">
+            A simple thank-you for Bluffton locals. Claim your digital coupon and show valid local ID at check-in.
           </p>
+
           <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a href="#claim" class="inline-flex items-center justify-center rounded-sm bg-[#C8A44D] px-6 py-4 text-sm font-bold uppercase tracking-[.13em] text-[#0C2745] transition hover:bg-[#E2C66F]">
-              Get My Local Coupon
+            <a href="#claim" class="cta-primary inline-flex items-center justify-center rounded-sm px-7 py-4 text-sm font-extrabold uppercase tracking-[.14em] transition">
+              Claim My 20% Coupon
             </a>
-            <p class="club-serif text-2xl font-semibold italic text-white/90">The Course Bluffton Calls Home.</p>
+            <a href="#coupon" class="cta-secondary inline-flex items-center justify-center rounded-sm px-7 py-4 text-sm font-bold uppercase tracking-[.14em] text-white transition hover:bg-white/12">
+              See The Coupon
+            </a>
+          </div>
+
+          <div class="mt-9 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-[.22em] text-white/90">
+            <span class="trust-pill rounded-full px-4 py-2">20% OFF</span>
+            <span class="trust-pill rounded-full px-4 py-2">Oct 6–13</span>
+            <span class="trust-pill rounded-full px-4 py-2">Bluffton Locals</span>
+            <span class="trust-pill rounded-full px-4 py-2">Valid ID Required</span>
           </div>
         </div>
 
-        <div class="relative z-10" data-aos="fade-up" data-aos-delay="100">
-          <div class="premium-card overflow-hidden rounded-[1.5rem] bg-white/8 p-3 backdrop-blur-sm sm:p-4">
-            <div class="overflow-hidden rounded-[1.2rem] bg-[#f7f4ec] p-3 sm:p-4">
-              <div class="rounded-[1rem] border border-white bg-white p-3 shadow-[0_18px_45px_rgba(8,31,55,.12)] sm:p-4">
-                <img src="https://paymegpt.com/objects/generated-images/1257/1791224867719-5d7a5d2d304e2afa.png" alt="Bluffton Golf Club 20% local appreciation campaign graphic" class="h-auto w-full rounded-[.85rem] object-cover">
+        <div class="relative z-10">
+          <div class="grid gap-5 lg:justify-items-end">
+            <div class="soft-shadow overflow-hidden rounded-[1.7rem] bg-white p-3 sm:p-4 lg:max-w-[520px]">
+              <div class="overflow-hidden rounded-[1.2rem] bg-[#f7f4ec] p-3 sm:p-4">
+                <img src="https://paymegpt.com/objects/generated-images/1257/1791224867719-5d7a5d2d304e2afa.png" alt="Bluffton Golf Club 20% local appreciation campaign graphic" class="h-auto w-full rounded-[1rem] object-cover">
               </div>
+            </div>
+            <div class="max-w-[420px] rounded-[1.35rem] border border-white/12 bg-white/10 p-5 text-white backdrop-blur-md premium-shadow lg:-mr-8">
+              <p class="section-kicker text-[#E2C66F]">Fast access</p>
+              <p class="mt-3 text-xl font-semibold leading-tight">Claim the coupon now. Show it at check-in. Enjoy the savings.</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="border-t border-white/10 bg-white/95 backdrop-blur">
-        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-12">
-          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] font-bold uppercase tracking-[.22em] text-[#16375C] sm:text-xs">
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-12">
+        <div class="rounded-[1.5rem] border border-[#16375C]/8 bg-[#F7F4EC] px-5 py-5 sm:px-8 sm:py-6">
+          <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[11px] font-extrabold uppercase tracking-[.22em] text-[#16375C] sm:text-xs">
             <span>20% Off</span>
             <span class="text-[#C8A44D]">•</span>
-            <span>Oct. 6–13</span>
+            <span>Oct 6–13</span>
             <span class="text-[#C8A44D]">•</span>
-            <span>Valid Local ID Required</span>
+            <span>Bluffton Locals</span>
+            <span class="text-[#C8A44D]">•</span>
+            <span>Valid ID Required</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section data-section="story" class="bg-white">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
-        <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
-          <div data-aos="fade-up">
-            <p class="text-xs font-bold uppercase tracking-[.22em] text-[#9B792B]">Bluffton’s Home Course</p>
-            <h2 class="mt-3 text-4xl font-semibold leading-tight text-[#16375C] sm:text-5xl">A simple thank-you to the people who make this place home.</h2>
+    <section class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 pb-6 sm:px-6 sm:pb-10 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+          <div class="gold-line">
+            <p class="section-kicker text-[#9B792B]">Bluffton’s Home Course Is Giving Back</p>
+            <h2 class="mt-3 max-w-xl text-4xl font-semibold leading-tight text-[#16375C] sm:text-5xl">
+              A simple thank-you for the people who call this town home.
+            </h2>
           </div>
-          <div class="gold-rule max-w-2xl" data-aos="fade-up" data-aos-delay="100">
-            <p class="text-base leading-8 text-slate-700 sm:text-lg">
-              Local Appreciation Week is our way of opening the door a little wider for Bluffton. A polished, straightforward giveback for local golfers — rooted in hospitality, community, and the course that calls this town home.
+          <div class="max-w-2xl space-y-4 text-base leading-8 text-slate-700 sm:text-lg">
+            <p>Local Appreciation Week is built for Bluffton residents.</p>
+            <p>Get 20% off October 6–13 with valid local ID.</p>
+            <p>Claim your coupon below in under a minute.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coupon" class="bg-[#F7F4EC]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
+          <div class="coupon-frame premium-shadow overflow-hidden rounded-[1.7rem] p-3 sm:p-4">
+            <div class="rounded-[1.35rem] border border-white/10 bg-white/5 p-3 sm:p-4">
+              <div class="rounded-[1.1rem] bg-white p-3 sm:p-4">
+                <img src="https://paymegpt.com/objects/generated-images/1257/1791227685169-841ab2bb7811c517.png" alt="Bluffton Golf Club official local appreciation coupon graphic" class="h-auto w-full rounded-[.85rem] object-cover">
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[1.7rem] bg-white p-6 sm:p-8 premium-shadow">
+            <p class="section-kicker text-[#9B792B]">This Is The Coupon You’ll Receive</p>
+            <h2 class="mt-3 text-4xl font-semibold leading-tight text-[#16375C] sm:text-5xl">
+              Official. Branded. Ready to use.
+            </h2>
+            <div class="mt-6 grid gap-3 sm:grid-cols-3">
+              <div class="flex items-start gap-3 rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <div class="step-badge">1</div>
+                <p class="text-sm font-semibold leading-6 text-[#16375C]">Fill out the form.</p>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <div class="step-badge">2</div>
+                <p class="text-sm font-semibold leading-6 text-[#16375C]">Check your email.</p>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <div class="step-badge">3</div>
+                <p class="text-sm font-semibold leading-6 text-[#16375C]">Show coupon + local ID.</p>
+              </div>
+            </div>
+            <p class="mt-6 max-w-2xl text-base leading-8 text-slate-700">
+              Your coupon is emailed instantly after submission.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section data-section="coupon-preview" class="fine-grid bg-[#F7F4EC]">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
-        <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
-          <p class="text-xs font-bold uppercase tracking-[.22em] text-[#9B792B]">Coupon Preview</p>
-          <h2 class="mt-3 text-4xl font-semibold text-[#16375C] sm:text-5xl">Your Official Local Appreciation Coupon</h2>
-          <p class="mt-5 text-base leading-8 text-slate-700">
-            Submit the form below and your coupon will be emailed immediately. Show it at check-in on your phone along with valid local ID.
-          </p>
-        </div>
-        <div class="mt-10 grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-          <div class="premium-card overflow-hidden rounded-[1.5rem] bg-white p-3 sm:p-4" data-aos="fade-up">
-            <div class="rounded-[1.15rem] border border-[#16375C]/10 bg-[#0c2745] p-3 sm:p-4">
-              <div class="rounded-[.95rem] bg-white p-3 sm:p-4">
-                <img src="https://paymegpt.com/objects/generated-images/1257/1791227685169-841ab2bb7811c517.png" alt="Bluffton Golf Club official local appreciation coupon graphic" class="h-auto w-full rounded-[.7rem] object-cover">
-              </div>
-            </div>
-          </div>
-          <div class="max-w-2xl" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-[1.25rem] bg-white p-8 shadow-[0_20px_55px_rgba(8,31,55,.08)] sm:p-10">
-              <p class="text-xs font-bold uppercase tracking-[.22em] text-[#9B792B]">How it works</p>
-              <div class="mt-6 grid gap-4 sm:grid-cols-3">
-                <div class="step-line pr-4">
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">01</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Fill out the form.</p>
-                </div>
-                <div class="step-line pr-4">
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">02</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Check your email.</p>
-                </div>
-                <div>
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">03</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Show your coupon + local ID at BGC.</p>
-                </div>
-              </div>
-              <p class="mt-6 text-sm leading-7 text-slate-600">
-                This is the official Local Appreciation coupon presentation for Bluffton residents during the campaign window.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="claim" data-section="claim-coupon" class="bg-[#16375C]">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
-        <div class="grid gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-start">
-          <div class="text-white" data-aos="fade-up">
-            <p class="text-xs font-bold uppercase tracking-[.22em] text-[#E2C66F]">October 6–13, 2026</p>
-            <h2 class="mt-3 text-4xl font-semibold leading-tight sm:text-5xl">Claim your 20% local coupon.</h2>
+    <section id="claim" class="bg-[#16375C]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-[.92fr_1.08fr] lg:items-start">
+          <div class="text-white">
+            <p class="section-kicker text-[#E2C66F]">Claim Your Coupon</p>
+            <h2 class="mt-3 text-4xl font-semibold leading-tight sm:text-5xl">
+              Get your 20% off coupon now.
+            </h2>
             <p class="mt-5 max-w-xl text-base leading-8 text-white/80">
-              Complete the short form and we’ll email your coupon right away. Bring valid local ID when you arrive and enjoy Local Appreciation Week at Bluffton Golf Club.
+              Complete the short form and we’ll send your coupon right away.
             </p>
-            <div class="mt-8 rounded-[1.25rem] border border-white/12 bg-white/6 p-6 backdrop-blur-sm">
-              <p class="text-xs font-bold uppercase tracking-[.22em] text-[#E2C66F]">What happens next</p>
+            <div class="mt-8 rounded-[1.35rem] border border-white/12 bg-white/6 p-5 backdrop-blur-sm">
+              <p class="text-xs font-extrabold uppercase tracking-[.22em] text-[#E2C66F]">What happens next</p>
               <p class="mt-3 text-sm leading-7 text-white/80">
-                You’ll receive the coupon by email after submitting the form. Keep it handy for check-in and present it with your local ID.
+                Email arrives immediately. Bring it with valid local ID when you visit.
               </p>
-              <div class="mt-6 border-l-2 border-[#C8A44D] pl-5">
-                <p class="club-serif text-2xl font-semibold italic text-white">Bluffton, this one’s for you.</p>
-              </div>
             </div>
           </div>
 
-          <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-[1.25rem] bg-white p-6 shadow-[0_24px_70px_rgba(8,31,55,.18)] sm:p-8">
-              <div class="mb-6 grid gap-4 sm:grid-cols-3">
-                <div class="rounded-xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">01</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Fill out the form.</p>
-                </div>
-                <div class="rounded-xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">02</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Check your email.</p>
-                </div>
-                <div class="rounded-xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
-                  <p class="text-[11px] font-bold uppercase tracking-[.22em] text-[#C8A44D]">03</p>
-                  <p class="mt-2 text-sm font-semibold text-[#16375C]">Show coupon + local ID.</p>
-                </div>
+          <div class="rounded-[1.7rem] bg-white p-5 shadow-[0_28px_90px_rgba(8,31,55,.22)] sm:p-8">
+            <div class="mb-6 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <p class="text-[11px] font-extrabold uppercase tracking-[.22em] text-[#C8A44D]">01</p>
+                <p class="mt-2 text-sm font-semibold text-[#16375C]">Fill out the form.</p>
               </div>
-              <script src="https://paymegpt.com/forms-embed.js" data-form="hbsa2yzx" data-theme="light" data-accent="#16375C" data-accent2="#C8A44D" data-gradient="0" async></script>
+              <div class="rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <p class="text-[11px] font-extrabold uppercase tracking-[.22em] text-[#C8A44D]">02</p>
+                <p class="mt-2 text-sm font-semibold text-[#16375C]">Check your email.</p>
+              </div>
+              <div class="rounded-2xl border border-[#16375C]/10 bg-[#F7F4EC] p-4">
+                <p class="text-[11px] font-extrabold uppercase tracking-[.22em] text-[#C8A44D]">03</p>
+                <p class="mt-2 text-sm font-semibold text-[#16375C]">Show coupon + local ID.</p>
+              </div>
             </div>
+            <script src="https://paymegpt.com/forms-embed.js" data-form="hbsa2yzx" data-theme="light" data-accent="#16375C" data-accent2="#C8A44D" data-gradient="0" async></script>
           </div>
         </div>
       </div>
     </section>
 
-    <section data-section="offer-terms" class="bg-white">
-      <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14 lg:px-12" data-aos="fade-up">
-        <div class="rounded-[1.25rem] border border-[#16375C]/10 bg-[#F7F4EC] px-6 py-8 sm:px-8">
-          <h2 class="text-2xl font-semibold text-[#16375C]">Terms</h2>
-          <div class="mt-5 grid gap-3 text-sm leading-7 text-slate-700 sm:grid-cols-2">
-            <p>Valid October 6–13, 2026.</p>
-            <p>Valid local ID required.</p>
-            <p>One coupon per customer.</p>
-            <p>Cannot be combined with other offers.</p>
-          </div>
+    <section class="bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10 lg:px-12">
+        <div class="rounded-[1.35rem] border border-[#16375C]/10 bg-[#F7F4EC] px-5 py-5 sm:px-7 sm:py-6">
+          <p class="text-xs font-bold uppercase tracking-[.22em] text-[#9B792B]">Terms</p>
+          <p class="mt-3 text-sm leading-7 text-slate-700">
+            Valid Oct 6–13, 2026. Valid local ID required. One coupon per customer. Cannot be combined with other offers.
+          </p>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ============================================================================ -->
-  <!-- FOOTER: Campaign close and brand positioning                                  -->
-  <!-- ============================================================================ -->
-  <footer data-section="footer" class="bg-[#0C2745]">
-    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-4 py-8 text-center sm:px-6 md:flex-row md:text-left lg:px-12">
-      <img src="https://paymegpt.com/objects/quick-uploads/1257/320add9e72666f17.jpg" alt="Bluffton Golf Club" class="h-14 w-auto max-w-[190px] rounded-sm bg-white object-contain">
-      <div>
-        <p class="club-serif text-xl font-semibold italic text-white">The Course Bluffton Calls Home.</p>
-        <p class="mt-1 text-xs text-white/55">Local Appreciation Week · October 6–13, 2026</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ===== SCROLL REVEAL INITIALIZATION ===== -->
-  <!-- Reveals supporting content once as visitors move down the page. -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ once: true, duration: 700, offset: 80 });
-  </script>
 </body>
 </html>
