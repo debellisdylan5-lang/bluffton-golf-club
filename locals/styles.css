@@ -1,6 +1,4 @@
-/* ===== BRAND FOUNDATION ===== */
-    /* Edit these variables to update the primary Bluffton Golf Club palette. */
-    :root {
+:root {
       --bgc-blue: #16375c;
       --bgc-deep: #0c2745;
       --bgc-gold: #c8a44d;
@@ -8,18 +6,22 @@
       --bgc-ink: #172536;
     }
     html { scroll-behavior: smooth; }
-    body { font-family: "Montserrat", sans-serif; color: var(--bgc-ink); }
+    body { font-family: "Montserrat", sans-serif; color: var(--bgc-ink); background: #fff; }
     h1, h2, h3, .club-serif { font-family: "Cormorant Garamond", serif; }
     ::selection { background: var(--bgc-gold); color: var(--bgc-deep); }
 
-    /* ===== HERO IMAGE & OVERLAY ===== */
-    /* The layered overlay keeps the headline legible over the official course photo. */
-    .hero-image {
-      background-image:
-        linear-gradient(90deg, rgba(7, 29, 52, .94) 0%, rgba(10, 39, 70, .79) 52%, rgba(10, 39, 70, .3) 100%),
-        url("https://paymegpt.com/objects/quick-uploads/1257/32fdf665b9e594f9.jpg");
-      background-position: center;
-      background-size: cover;
+    .hero-panel {
+      background:
+        radial-gradient(circle at top left, rgba(200, 164, 77, .12), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+    }
+    .premium-card {
+      box-shadow: 0 24px 70px rgba(8, 31, 55, .14);
+      border: 1px solid rgba(22, 55, 92, .08);
+    }
+    .fine-grid {
+      background-image: radial-gradient(rgba(22, 55, 92, .075) .7px, transparent .7px);
+      background-size: 18px 18px;
     }
     .gold-rule::before {
       content: "";
@@ -29,14 +31,20 @@
       margin-bottom: 1rem;
       background: var(--bgc-gold);
     }
-    .fine-grid {
-      background-image: radial-gradient(rgba(22, 55, 92, .09) .7px, transparent .7px);
-      background-size: 18px 18px;
+    .step-line {
+      position: relative;
     }
-    .offer-shadow { box-shadow: 0 20px 55px rgba(8, 31, 55, .18); }
+    .step-line::after {
+      content: "";
+      position: absolute;
+      top: 1.1rem;
+      left: calc(100% + 1rem);
+      width: calc(100% - 2rem);
+      height: 1px;
+      background: rgba(22, 55, 92, .18);
+    }
+    .step-line:last-child::after { display: none; }
 
-    /* ===== ACCESSIBILITY ===== */
-    /* Provides a visible keyboard focus treatment throughout the page. */
     a:focus-visible, button:focus-visible {
       outline: 3px solid var(--bgc-gold);
       outline-offset: 4px;
