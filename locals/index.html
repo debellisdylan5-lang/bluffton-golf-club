@@ -314,12 +314,40 @@
 <body>
 <main>
 <section class="hero"><div class="wrap">
-<nav class="nav"><div class="brand"><img src="https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png" alt="Bluffton Golf Club"><span>Bluffton Golf Club</span></div><div class="locals">For Bluffton locals</div></nav>
-<div class="hero-grid"><div><div class="eyebrow">Local Appreciation Week · October 6–13</div><h1>Bluffton,<br><em>this one’s for you.</em></h1><p class="intro">As a thank-you to the people who call this town home, enjoy 20% off at Bluffton Golf Club during Local Appreciation Week.</p><a class="button" href="#claim">Claim my local offer</a></div><aside class="hero-side"><div class="offer">20% off<span>October 6–13</span></div><p class="side-copy">Your offer will be sent straight to your inbox. Please bring a valid local ID when you visit.</p></aside></div>
+<nav class="nav"><div class="brand"><div class="brand-logo" aria-label="Bluffton Golf Club"></div><span>Bluffton Golf Club</span></div><div class="locals">For Bluffton locals</div></nav>
+<div class="hero-grid"><div><div class="eyebrow">Local Appreciation Week · October 6–13</div><h1>Bluffton,<br><em>this one’s for you.</em></h1><p class="intro">As a thank-you to the people who call this town home, enjoy 20% off at Bluffton Golf Club during Local Appreciation Week.</p><a class="button" href="#claim">Claim My Local Offer</a></div><aside class="hero-side"><div class="offer">20% off<span>October 6–13</span></div><p class="side-copy">Your offer will be sent straight to your inbox. Please bring a valid local ID when you visit.</p></aside></div>
 </div></section>
 <section class="details"><div class="wrap detail-grid"><div class="detail">Bluffton residents</div><div class="detail">Valid local ID required</div><div class="detail">One offer per guest</div></div></section>
-<section class="story"><div class="wrap story-grid"><div><img class="gold-logo" src="https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png" alt="Bluffton Golf Club"><div class="eyebrow" style="color:#9b792b">A local thank-you</div><h2 class="display" style="margin-top:15px">Your home course is giving back.</h2></div><p class="copy"><strong>Made for the people who make Bluffton home</strong>For one week, local residents receive 20% off at Bluffton Golf Club. It is a simple invitation to take a little more time for the game you love, close to home.</p></div></section>
-<section id="claim" class="claim"><div class="wrap claim-grid"><div class="claim-intro"><div class="eyebrow" style="color:#9b792b">Claim your offer</div><h2 class="display" style="margin-top:15px">A better week on the course starts here.</h2><p>Complete the short form and we’ll send your offer right away.</p><div class="steps"><div class="step"><b>01</b><span>Complete the form</span></div><div class="step"><b>02</b><span>Check your inbox</span></div><div class="step"><b>03</b><span>Show email + ID</span></div></div></div><div class="form-shell"><img class="form-mark" src="https://paymegpt.com/objects/quick-uploads/1257/5e32ab36c69024a9.png" alt="Bluffton Golf Club"><div class="form-label">Local Appreciation Week</div><h2>Claim your 20% off.</h2><script src="https://paymegpt.com/forms-embed.js" data-form="hbsa2yzx" data-theme="light" data-accent="#112F4B" data-bg="#e9e0d0" data-surface="#f8f3e9" data-field="#ffffff" data-text="#112F4B" data-gradient="0" async></script></div></div></section>
+<section class="story"><div class="wrap story-grid"><div><div class="gold-logo" aria-label="Bluffton Golf Club"></div><div class="eyebrow" style="color:#C8A44D">A local thank-you</div><h2 class="display" style="margin-top:15px">Your home course is giving back.</h2></div><p class="copy"><strong>Made for the people who make Bluffton home</strong>For one week, local residents receive 20% off at Bluffton Golf Club. It is a simple invitation to take a little more time for the game you love, close to home.</p></div></section>
+<section id="claim" class="claim"><div class="wrap claim-grid"><div class="claim-intro"><div class="eyebrow" style="color:#C8A44D">Claim your offer</div><h2 class="display" style="margin-top:15px">A better week on the course starts here.</h2><p>Complete the short form and we’ll send your offer right away.</p><div class="steps"><div class="step"><b>01</b><span>Complete the form</span></div><div class="step"><b>02</b><span>Check your inbox</span></div><div class="step"><b>03</b><span>Show email + ID</span></div></div></div><div class="form-shell"><div class="form-mark" aria-label="Bluffton Golf Club"></div><div class="form-label">Local Appreciation Week</div><h2>Claim your 20% off.</h2><div class="thank-you" id="thankYou"><strong>Thank you</strong>Please check your email for your Local Appreciation Week confirmation and show your email plus a valid local ID when you visit.</div><script src="https://paymegpt.com/forms-embed.js" data-form="hbsa2yzx" data-theme="light" data-accent="#174A8B" data-accent2="#C8A44D" data-bg="#edf2f8" data-surface="#ffffff" data-field="#ffffff" data-text="#174A8B" data-gradient="0" async></script></div></div></section>
 </main>
 <footer class="terms"><div class="wrap"><strong>Terms</strong> Valid October 6–13, 2026. Valid local ID required. One offer per customer. Cannot be combined with other offers.</div></footer>
+<script>
+(function(){
+  const root=document.querySelector('.form-shell');
+  const thankYou=document.getElementById('thankYou');
+  function scrubCouponUI(){
+    if(!root) return;
+    root.querySelectorAll('a,button,[role="button"]').forEach(el=>{
+      const txt=(el.textContent||'').trim().toLowerCase();
+      const href=(el.getAttribute('href')||'').toLowerCase();
+      if(txt.includes('view coupon')||txt.includes('coupon')||href.includes('coupon')){
+        el.remove();
+      }
+    });
+    root.querySelectorAll('*').forEach(el=>{
+      const txt=(el.textContent||'').trim().toLowerCase();
+      if(txt==='view coupon'){
+        el.remove();
+      }
+    });
+    const successText=root.innerText.toLowerCase();
+    if(successText.includes('thank you')||successText.includes('check your email')){
+      if(thankYou) thankYou.style.display='block';
+    }
+  }
+  scrubCouponUI();
+  new MutationObserver(scrubCouponUI).observe(root,{childList:true,subtree:true,characterData:true});
+})();
+</script>
 </body></html>
