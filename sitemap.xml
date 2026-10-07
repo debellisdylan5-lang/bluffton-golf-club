@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
+    <lastmod>2026-10-07T15:52:50.642Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-10-07T15:52:43.782Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,11 +93,6 @@
   <url>
     <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
     <lastmod>2026-10-07T15:45:30.703Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/golf-courses-in-bluffton-sc/</loc>
-    <lastmod>2026-10-07T15:45:22.963Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
