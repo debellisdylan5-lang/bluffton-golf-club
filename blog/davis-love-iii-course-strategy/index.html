@@ -1677,5 +1677,44 @@ body > .mobile-actions{display:none!important}
     })();
   </script>
 
+
+<!-- BGC GA4 conversion-intent tracking -->
+<script data-bgc-ga4-tracking>
+(function(){
+  function send(name, params){ if(typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
+  window.bgcTrack = function(name, params){ send(name, params); };
+  function textFor(el){ return ((el.getAttribute('aria-label') || el.textContent || '') + '').trim().replace(/\s+/g,' ').slice(0,100); }
+  function eventFor(href){
+    var url=(href || '').toLowerCase();
+    if(url.indexOf('tel:') === 0) return 'phone_click';
+    if(url.indexOf('mailto:') === 0) return 'email_click';
+    if(url.indexOf('book-tee-times') !== -1 || url.indexOf('golfscape.com') !== -1) return 'tee_time_click';
+    if(url.indexOf('/membership') !== -1) return 'membership_click';
+    if(url.indexOf('/lessons') !== -1) return 'lessons_click';
+    if(url.indexOf('/outings') !== -1) return 'outing_click';
+    if(url.indexOf('/rewards') !== -1) return 'rewards_click';
+    if(url.indexOf('/contact') !== -1) return 'contact_click';
+    if(url.indexOf('google.com/maps') !== -1 || url.indexOf('maps.apple.com') !== -1) return 'directions_click';
+    return '';
+  }
+  document.addEventListener('click', function(e){
+    var link=e.target.closest && e.target.closest('a[href]');
+    if(!link) return;
+    var inline=link.getAttribute('onclick') || '';
+    if(inline.indexOf('bgcTrack') !== -1) return;
+    var name=eventFor(link.href || link.getAttribute('href'));
+    if(name) send(name,{link_url:link.href || '',link_text:textFor(link)});
+  }, true);
+  document.addEventListener('pointerdown', function(e){
+    var frame=e.target && e.target.closest && e.target.closest('iframe[src*="paymegpt.com/forms/"]');
+    if(!frame || frame.dataset.bgcFormStarted) return;
+    frame.dataset.bgcFormStarted='1';
+    var src=frame.getAttribute('src') || '';
+    var type=src.indexOf('bjm0apxr') !== -1 ? 'membership' : src.indexOf('132mbgv5') !== -1 ? 'outing' : src.indexOf('smuof0i5') !== -1 ? 'contact' : src.indexOf('7sfwi1ph') !== -1 ? 'lesson' : src.indexOf('n8snsa5f') !== -1 ? 'rewards' : 'inquiry';
+    send(type+'_form_start',{form_type:type});
+  }, true);
+})();
+</script>
+
 </body>
 </html>
