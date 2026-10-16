@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blufftongc.com/blog/tim-ashley-golf-tips/</loc>
+    <lastmod>2026-10-16T16:08:02.672Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/</loc>
+    <lastmod>2026-10-16T16:03:49.954Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blufftongc.com/blog/</loc>
+    <lastmod>2026-10-16T16:03:25.076Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://blufftongc.com/lessons/</loc>
     <lastmod>2026-10-08T16:01:45.760Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -71,11 +86,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blufftongc.com/</loc>
-    <lastmod>2026-10-08T05:26:20.903Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://blufftongc.com/blog/golf-lessons-in-bluffton-sc/</loc>
     <lastmod>2026-10-08T05:26:18.058Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,11 +98,6 @@
   <url>
     <loc>https://blufftongc.com/blog/davis-love-iii-course-strategy/</loc>
     <lastmod>2026-10-08T05:26:05.432Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blufftongc.com/blog/</loc>
-    <lastmod>2026-10-08T05:25:58.867Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
